@@ -52,3 +52,16 @@ class PlaySerializer(serializers.ModelSerializer):
     class Meta:
         model = Play
         fields = ("id", "title", "genres", "actors")
+
+
+class ActorDetailSerializer(ActorSerializer):
+    plays_in = serializers.SlugRelatedField(
+        source="plays",
+        many=True,
+        read_only=True,
+        slug_field="title"
+    )
+
+    class Meta:
+        model = Actor
+        fields = ("first_name", "last_name", "full_name", "plays_in",)

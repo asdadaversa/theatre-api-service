@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
+from rest_framework.pagination import PageNumberPagination
 
 from theatre.models import (
     TheatreHall,
@@ -18,8 +19,14 @@ from theatre.serialazers import (
     PerformanceSerializer,
     ReservationSerializer,
     TicketSerializer,
-    PlaySerializer
+    PlaySerializer, ActorDetailSerializer
 )
+
+
+class OrderPagination(PageNumberPagination):
+    page_size = 3
+    page_size_query_param = "page_size"
+    max_page_size = 1000
 
 
 class TheatreHallViewSet(viewsets.ModelViewSet):
@@ -30,6 +37,12 @@ class TheatreHallViewSet(viewsets.ModelViewSet):
 class ActorViewSet(viewsets.ModelViewSet):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
+    pagination_class = OrderPagination
+
+    def get_serializer_class(self):
+        if self.action == "retrieve":
+            return ActorDetailSerializer
+        return ActorSerializer
 
 
 class GenreViewSet(viewsets.ModelViewSet):
@@ -55,3 +68,4 @@ class TicketViewSet(viewsets.ModelViewSet):
 class PlayViewSet(viewsets.ModelViewSet):
     queryset = Play.objects.all()
     serializer_class = PlaySerializer
+
