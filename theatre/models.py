@@ -9,7 +9,7 @@ class TheatreHall(models.Model):
     seats_in_row = models.IntegerField()
 
     class Meta:
-        verbose_name_plural = "theatrehalls"
+        verbose_name_plural = "theatre_halls"
         ordering = ["-id"]
 
     @property
@@ -106,9 +106,9 @@ class Ticket(models.Model):
     def clean(self):
         Ticket.validate_seats(
             self.seat,
-            self.movie_session.cinema_hall.seats_in_row,
+            self.performance.theatre_hall.seats_in_row,
             self.row,
-            self.movie_session.cinema_hall.rows,
+            self.performance.theatre_hall.rows,
             ValidationError
         )
 
