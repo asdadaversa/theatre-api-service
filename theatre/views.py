@@ -1,3 +1,4 @@
+from django.db.models import F, Count
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.authentication import TokenAuthentication
@@ -23,9 +24,18 @@ from theatre.serialazers import (
     PlaySerializer,
     ActorDetailSerializer,
     GenreDetailSerializer,
-    TicketDetailSerializer, PlayListSerializer, PlayDetailSerializer, TheatreHallDetailSerializer,
-    ReservationDetailSerializer, PerformanceDetailSerializer, PerformanceListSerializer
+    TicketDetailSerializer,
+    PlayListSerializer,
+    PlayDetailSerializer,
+    TheatreHallDetailSerializer,
+    ReservationDetailSerializer,
+    PerformanceDetailSerializer,
+    PerformanceListSerializer
 )
+
+
+def params_to_ints(qs):
+    return [int(str_id) for str_id in qs.split(",")]
 
 
 class OrderPagination(PageNumberPagination):
@@ -69,6 +79,32 @@ class PerformanceViewSet(viewsets.ModelViewSet):
     queryset = Performance.objects.all()
     serializer_class = PerformanceSerializer
 
+    def get_queryset(self):
+        queryset = self.queryset
+        play = self.request.query_params.get("play")
+        date = self.request.query_params.get("date")
+
+        if self.action == "list":
+            queryset = (
+                queryset
+                .prefetch_related("tickets")
+                .select_related("play", "theatre_hall")
+                .annotate(
+                    tickets_available=(F("theatre_hall__rows")
+                                       * F("theatre_hall__seats_in_row")
+                                       - Count("tickets"))
+                )
+            )
+
+        if play:
+            play_id = params_to_ints(play)
+            queryset = queryset.filter(play__id__in=play_id)
+
+        if date:
+            queryset = queryset.filter(show_time__date=date)
+
+        return queryset.distinct()
+
     def get_serializer_class(self):
         if self.action == "retrieve":
             return PerformanceDetailSerializer
@@ -111,6 +147,29 @@ class TicketViewSet(viewsets.ModelViewSet):
 class PlayViewSet(viewsets.ModelViewSet):
     queryset = Play.objects.all()
     serializer_class = PlaySerializer
+
+    def get_queryset(self):
+        queryset = self.queryset
+        actors = self.request.query_params.get("actors")
+        genres = self.request.query_params.get("genres")
+        title = self.request.query_params.get("title")
+
+        if actors:
+            actors_ids = params_to_ints(actors)
+            queryset = queryset.filter(actors__id__in=actors_ids)
+            if self.action in ("list", "retrieve"):
+                queryset = queryset.prefetch_related("actors")
+
+        if genres:
+            genres_ids = params_to_ints(genres)
+            queryset = queryset.filter(genres__id__in=genres_ids)
+            if self.action in ("list", "retrieve"):
+                queryset = queryset.prefetch_related("genres")
+
+        if title:
+            queryset = queryset.filter(title__icontains=title)
+
+        return queryset.distinct()
 
     def get_serializer_class(self):
         if self.action == "list":
