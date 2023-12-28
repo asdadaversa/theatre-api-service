@@ -50,6 +50,15 @@ class PerformanceSerializer(serializers.ModelSerializer):
         fields = ("id", "show_time", "play", "theatre_hall")
 
 
+class PerformanceTicketSerializer(PerformanceSerializer):
+    play_title = serializers.CharField(source="play.title", read_only=True)
+    theatre_hall_name = serializers.CharField(source="theatre_hall.name", read_only=True)
+
+    class Meta:
+        model = Performance
+        fields = ("id", "show_time", "play_title", "theatre_hall_name")
+
+
 class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
@@ -75,7 +84,7 @@ class TicketSerializer(serializers.ModelSerializer):
 
 
 class TicketDetailSerializer(TicketSerializer):
-    performance = PerformanceSerializer(many=False, read_only=False)
+    performance = PerformanceTicketSerializer(many=False, read_only=False)
 
     class Meta:
         model = Ticket
@@ -85,7 +94,25 @@ class TicketDetailSerializer(TicketSerializer):
 class PlaySerializer(serializers.ModelSerializer):
     class Meta:
         model = Play
-        fields = ("id", "title", "genres", "actors")
+        fields = ("id", "title", "description", "genres", "actors")
+
+
+class PlayListSerializer(PlaySerializer):
+    genres = serializers.SlugRelatedField(
+        many=True, read_only=True, slug_field="name"
+    )
+    actors = serializers.SlugRelatedField(
+        many=True, read_only=True, slug_field="full_name"
+    )
+
+
+class PlayDetailSerializer(PlaySerializer):
+    genres = GenreSerializer(many=True, read_only=True)
+    actors = ActorSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Play
+        fields = ("id", "title", "description", "genres", "actors")
 
 
 class ActorDetailSerializer(ActorSerializer):
