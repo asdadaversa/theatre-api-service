@@ -35,6 +35,7 @@ from theatre.serialazers import (
 
 
 def params_to_ints(qs):
+    """Converts a list of string IDs to a list of integers"""
     return [int(str_id) for str_id in qs.split(",")]
 
 
@@ -80,6 +81,7 @@ class PerformanceViewSet(viewsets.ModelViewSet):
     serializer_class = PerformanceSerializer
 
     def get_queryset(self):
+        """Retrieve the performances with filters"""
         queryset = self.queryset
         play = self.request.query_params.get("play")
         date = self.request.query_params.get("date")
@@ -115,15 +117,15 @@ class PerformanceViewSet(viewsets.ModelViewSet):
 
 
 class ReservationViewSet(viewsets.ModelViewSet):
-    queryset = Reservation.objects.all()
+    queryset = Reservation.objects.prefetch_related(
+        "tickets__performance__play", "tickets__performance__theatre_hall"
+    )
     serializer_class = ReservationSerializer
     authentication_classes = (TokenAuthentication, )
 
     def get_queryset(self):
-        queryset = self.queryset.filter(user=self.request.user)
-        if self.action == "list":
-            queryset = queryset.prefetch_related("tickets__performance")
-        return queryset
+        """Retrieve the reservations with filters by user"""
+        return self.queryset.filter(user=self.request.user)
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
@@ -135,7 +137,7 @@ class ReservationViewSet(viewsets.ModelViewSet):
 
 
 class TicketViewSet(viewsets.ModelViewSet):
-    queryset = Ticket.objects.all()
+    queryset = Ticket.objects.prefetch_related("performance__play")
     serializer_class = TicketSerializer
 
     def get_serializer_class(self):
@@ -145,10 +147,12 @@ class TicketViewSet(viewsets.ModelViewSet):
 
 
 class PlayViewSet(viewsets.ModelViewSet):
-    queryset = Play.objects.all()
+    queryset = Play.objects.prefetch_related("genres", "actors")
+
     serializer_class = PlaySerializer
 
     def get_queryset(self):
+        """Retrieve the plays with filters"""
         queryset = self.queryset
         actors = self.request.query_params.get("actors")
         genres = self.request.query_params.get("genres")
