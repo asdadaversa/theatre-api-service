@@ -56,7 +56,7 @@ class Play(models.Model):
 class Performance(models.Model):
     show_time = models.DateTimeField()
     play = models.ForeignKey(Play, on_delete=models.CASCADE)
-    theatre_hall = models.ForeignKey(TheatreHall, on_delete=models.CASCADE)
+    theatre_hall = models.ForeignKey(TheatreHall, on_delete=models.CASCADE, related_name="performances")
 
     class Meta:
         verbose_name_plural = "performances"
