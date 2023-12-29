@@ -1,4 +1,5 @@
 from django.db.models import F, Count
+from drf_spectacular.utils import extend_schema, OpenApiParameter
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
@@ -141,6 +142,31 @@ class PerformanceViewSet(viewsets.ModelViewSet):
 
         return PerformanceSerializer
 
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name="date",
+                type={
+                    "type": "datetime.date",
+                    "items": {"type": "datetime.date"}
+                },
+                description="filtering by date",
+            )
+        ]
+    )
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name="play",
+                type={"type": "list", "items": {"type": "number"}},
+                description="filtering by play",
+            )
+        ]
+    )
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+
 
 class ReservationViewSet(viewsets.ModelViewSet):
     queryset = Reservation.objects.prefetch_related(
@@ -231,3 +257,33 @@ class PlayViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name="title",
+                type={"type": "str", "items": {"type": "str"}},
+                description="filtering by title",
+            )
+        ]
+    )
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name="genres",
+                type={"type": "list", "items": {"type": "number"}},
+                description="filtering by genre",
+            )
+        ]
+    )
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name="actors",
+                type={"type": "list", "items": {"type": "number"}},
+                description="filtering by actors",
+            )
+        ]
+    )
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
