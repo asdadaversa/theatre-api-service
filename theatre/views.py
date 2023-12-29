@@ -1,12 +1,11 @@
 from django.db.models import F, Count
-from django.shortcuts import render
 from rest_framework import viewsets, status
-from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.permissions import IsAdminUser
 from rest_framework.response import Response
 
+from theatre.permissions import IsAdminOrIfAuthenticatedReadOnly
 from theatre.models import (
     TheatreHall,
     Actor,
@@ -16,7 +15,6 @@ from theatre.models import (
     Reservation,
     Ticket
 )
-
 from theatre.serialazers import (
     TheatreHallSerializer,
     ActorSerializer,
@@ -33,7 +31,9 @@ from theatre.serialazers import (
     TheatreHallDetailSerializer,
     ReservationDetailSerializer,
     PerformanceDetailSerializer,
-    PerformanceListSerializer, ActorImageSerializer, PlayImageSerializer
+    PerformanceListSerializer,
+    ActorImageSerializer,
+    PlayImageSerializer
 )
 
 
@@ -51,6 +51,7 @@ class OrderPagination(PageNumberPagination):
 class TheatreHallViewSet(viewsets.ModelViewSet):
     queryset = TheatreHall.objects.all()
     serializer_class = TheatreHallSerializer
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -62,6 +63,7 @@ class ActorViewSet(viewsets.ModelViewSet):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
     pagination_class = OrderPagination
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -91,6 +93,7 @@ class ActorViewSet(viewsets.ModelViewSet):
 class GenreViewSet(viewsets.ModelViewSet):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -101,6 +104,7 @@ class GenreViewSet(viewsets.ModelViewSet):
 class PerformanceViewSet(viewsets.ModelViewSet):
     queryset = Performance.objects.all()
     serializer_class = PerformanceSerializer
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
     def get_queryset(self):
         """Retrieve the performances with filters"""
@@ -143,7 +147,8 @@ class ReservationViewSet(viewsets.ModelViewSet):
         "tickets__performance__play", "tickets__performance__theatre_hall"
     )
     serializer_class = ReservationSerializer
-    authentication_classes = (TokenAuthentication, )
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
+    pagination_class = OrderPagination
 
     def get_queryset(self):
         """Retrieve the reservations with filters by user"""
@@ -161,6 +166,8 @@ class ReservationViewSet(viewsets.ModelViewSet):
 class TicketViewSet(viewsets.ModelViewSet):
     queryset = Ticket.objects.prefetch_related("performance__play")
     serializer_class = TicketSerializer
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
+    pagination_class = OrderPagination
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -170,8 +177,9 @@ class TicketViewSet(viewsets.ModelViewSet):
 
 class PlayViewSet(viewsets.ModelViewSet):
     queryset = Play.objects.prefetch_related("genres", "actors")
-    authentication_classes = (TokenAuthentication,)
     serializer_class = PlaySerializer
+    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
+    pagination_class = OrderPagination
 
     def get_queryset(self):
         """Retrieve the plays with filters"""
@@ -211,7 +219,7 @@ class PlayViewSet(viewsets.ModelViewSet):
         methods=["GET", "POST", "RETRIEVE"],
         detail=True,
         url_path="upload-image",
-        permission_classes=[IsAdminUser], #поменять пермшины потом
+        permission_classes=[IsAdminUser]
     )
     def upload_image(self, request, pk=None):
         """Endpoint for uploading image to specific play"""
@@ -223,5 +231,3 @@ class PlayViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
