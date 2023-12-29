@@ -1,8 +1,11 @@
 from django.db.models import F, Count
 from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.authentication import TokenAuthentication
+from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.response import Response
 
 from theatre.models import (
     TheatreHall,
@@ -30,7 +33,7 @@ from theatre.serialazers import (
     TheatreHallDetailSerializer,
     ReservationDetailSerializer,
     PerformanceDetailSerializer,
-    PerformanceListSerializer
+    PerformanceListSerializer, ActorImageSerializer, PlayImageSerializer
 )
 
 
@@ -63,7 +66,26 @@ class ActorViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         if self.action == "retrieve":
             return ActorDetailSerializer
+        if self.action == "upload_image":
+            return ActorImageSerializer
         return ActorSerializer
+
+    @action(
+        methods=["GET", "POST", "RETRIEVE"],
+        detail=True,
+        url_path="upload-image",
+        permission_classes=[IsAdminUser],
+    )
+    def upload_image(self, request, pk=None):
+        """Endpoint for uploading image to specific play"""
+        actor = self.get_object()
+        serializer = self.get_serializer(actor, data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class GenreViewSet(viewsets.ModelViewSet):
@@ -148,7 +170,7 @@ class TicketViewSet(viewsets.ModelViewSet):
 
 class PlayViewSet(viewsets.ModelViewSet):
     queryset = Play.objects.prefetch_related("genres", "actors")
-
+    authentication_classes = (TokenAuthentication,)
     serializer_class = PlaySerializer
 
     def get_queryset(self):
@@ -180,4 +202,26 @@ class PlayViewSet(viewsets.ModelViewSet):
             return PlayListSerializer
         if self.action == "retrieve":
             return PlayDetailSerializer
+        if self.action == "upload_image":
+            return PlayImageSerializer
+
         return PlaySerializer
+
+    @action(
+        methods=["GET", "POST", "RETRIEVE"],
+        detail=True,
+        url_path="upload-image",
+        permission_classes=[IsAdminUser], #поменять пермшины потом
+    )
+    def upload_image(self, request, pk=None):
+        """Endpoint for uploading image to specific play"""
+        play = self.get_object()
+        serializer = self.get_serializer(play, data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
