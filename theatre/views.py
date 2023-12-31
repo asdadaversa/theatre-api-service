@@ -1,10 +1,11 @@
 from django.db.models import F, Count
 from drf_spectacular.utils import extend_schema, OpenApiParameter
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.viewsets import GenericViewSet
 
 from theatre.permissions import IsAdminOrIfAuthenticatedReadOnly
 from theatre.models import (
@@ -16,7 +17,7 @@ from theatre.models import (
     Reservation,
     Ticket
 )
-from theatre.serialazers import (
+from theatre.serializers import (
     TheatreHallSerializer,
     ActorSerializer,
     GenreSerializer,
@@ -44,7 +45,7 @@ def params_to_ints(qs):
 
 
 class OrderPagination(PageNumberPagination):
-    page_size = 3
+    page_size = 4
     page_size_query_param = "page_size"
     max_page_size = 1000
 
@@ -63,7 +64,6 @@ class TheatreHallViewSet(viewsets.ModelViewSet):
 class ActorViewSet(viewsets.ModelViewSet):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
-    pagination_class = OrderPagination
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
     def get_serializer_class(self):
@@ -167,14 +167,17 @@ class PerformanceViewSet(viewsets.ModelViewSet):
         return super().list(request, *args, **kwargs)
 
 
-
-class ReservationViewSet(viewsets.ModelViewSet):
+class ReservationViewSet(
+    mixins.ListModelMixin,
+    mixins.CreateModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet
+):
     queryset = Reservation.objects.prefetch_related(
         "tickets__performance__play", "tickets__performance__theatre_hall"
     )
     serializer_class = ReservationSerializer
-    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
-    pagination_class = OrderPagination
+    permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
         """Retrieve the reservations with filters by user"""
@@ -189,11 +192,14 @@ class ReservationViewSet(viewsets.ModelViewSet):
         return ReservationSerializer
 
 
-class TicketViewSet(viewsets.ModelViewSet):
+class TicketViewSet(
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet,
+):
     queryset = Ticket.objects.prefetch_related("performance__play")
     serializer_class = TicketSerializer
-    permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
-    pagination_class = OrderPagination
+    permission_classes = (IsAdminUser,)
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -205,7 +211,6 @@ class PlayViewSet(viewsets.ModelViewSet):
     queryset = Play.objects.prefetch_related("genres", "actors")
     serializer_class = PlaySerializer
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
-    pagination_class = OrderPagination
 
     def get_queryset(self):
         """Retrieve the plays with filters"""
