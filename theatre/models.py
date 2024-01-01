@@ -75,8 +75,12 @@ class Play(models.Model):
 
 class Performance(models.Model):
     show_time = models.DateTimeField()
-    play = models.ForeignKey(Play, on_delete=models.CASCADE, related_name="performances")
-    theatre_hall = models.ForeignKey(TheatreHall, on_delete=models.CASCADE, related_name="performances")
+    play = models.ForeignKey(
+        Play, on_delete=models.CASCADE, related_name="performances"
+    )
+    theatre_hall = models.ForeignKey(
+        TheatreHall, on_delete=models.CASCADE, related_name="performances"
+    )
 
     class Meta:
         verbose_name_plural = "performances"
@@ -98,31 +102,41 @@ class Reservation(models.Model):
 
 
 class Ticket(models.Model):
-    performance = models.ForeignKey(Performance, on_delete=models.CASCADE, related_name="tickets")
-    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE, related_name="tickets")
+    performance = models.ForeignKey(
+        Performance, on_delete=models.CASCADE, related_name="tickets"
+    )
+    reservation = models.ForeignKey(
+        Reservation, on_delete=models.CASCADE, related_name="tickets"
+    )
     row = models.IntegerField()
     seat = models.IntegerField()
 
     @staticmethod
     def validate_seats(
-            seat: int,
-            seat_in_row: int,
-            row: int,
-            rows: int,
-            error_to_raise: ValidationError
+        seat: int,
+        seat_in_row: int,
+        row: int,
+        rows: int,
+        error_to_raise: ValidationError,
     ):
-
         if seat not in range(1, seat_in_row + 1):
-            raise error_to_raise({
-                "seat": (f"number must be in available range:"
-                         f"[1, {seat_in_row}], not {seat}")
-            })
+            raise error_to_raise(
+                {
+                    "seat": (
+                        f"number must be in available range:"
+                        f"[1, {seat_in_row}], not {seat}"
+                    )
+                }
+            )
 
         if row not in range(1, rows + 1):
-            raise error_to_raise({
-                "row": (f"number must be in available range:"
-                        f"[1, {rows}] , not {row}")
-            })
+            raise error_to_raise(
+                {
+                    "row": (
+                        f"number must be in available range:" f"[1, {rows}] , not {row}"
+                    )
+                }
+            )
 
     def clean(self):
         Ticket.validate_seats(
@@ -130,7 +144,7 @@ class Ticket(models.Model):
             self.performance.theatre_hall.seats_in_row,
             self.row,
             self.performance.theatre_hall.rows,
-            ValidationError
+            ValidationError,
         )
 
     def save(
@@ -141,14 +155,10 @@ class Ticket(models.Model):
         update_fields=None,
     ):
         self.full_clean()
-        super(Ticket, self).save(
-            force_insert, force_update, using, update_fields
-        )
+        super(Ticket, self).save(force_insert, force_update, using, update_fields)
 
     class Meta:
         unique_together = ("performance", "row", "seat")
 
     def __str__(self):
-        return (
-            f"{str(self.performance)} (row: {self.row}, seat: {self.seat})"
-        )
+        return f"{str(self.performance)} (row: {self.row}, seat: {self.seat})"

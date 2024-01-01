@@ -7,7 +7,7 @@ from theatre.views import (
     PerformanceViewSet,
     ReservationViewSet,
     TicketViewSet,
-    PlayViewSet
+    PlayViewSet,
 )
 
 

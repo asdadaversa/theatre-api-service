@@ -21,15 +21,19 @@ TICKET_URL = reverse("theatre:ticket-list")
 def sample_ticket(**params):
     theatre_hall = TheatreHall.objects.create(name="Blue", rows=20, seats_in_row=20)
     play = Play.objects.create(title="Play", description="short description")
-    performance = Performance.objects.create(play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z")
-    user = get_user_model().objects.create_user(f"user{random.randint(1,10000)}2@test.com", "testpass")
+    performance = Performance.objects.create(
+        play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z"
+    )
+    user = get_user_model().objects.create_user(
+        f"user{random.randint(1,10000)}2@test.com", "testpass"
+    )
     reservation = Reservation.objects.create(user=user)
 
     defaults = {
         "reservation": reservation,
         "performance": performance,
         "row": 10,
-        "seat": 20
+        "seat": 20,
     }
     defaults.update(params)
 
@@ -56,7 +60,6 @@ class AuthenticatedTicketApiTests(TestCase):
         self.client.force_authenticate(self.user)
 
     def test_list_ticket_forbidden(self):
-
         sample_ticket()
         sample_ticket()
 
@@ -78,12 +81,7 @@ class AuthenticatedTicketApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
     def test_create_ticket_forbidden(self):
-        payload = {
-            "reservation": 2,
-            "performance": 1,
-            "row": 5,
-            "seat": 1
-        }
+        payload = {"reservation": 2, "performance": 1, "row": 5, "seat": 1}
         res = self.client.post(TICKET_URL, payload)
         self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
@@ -97,7 +95,6 @@ class AdminTicketApiTests(TestCase):
         self.client.force_authenticate(self.user)
 
     def test_list_ticket(self):
-
         sample_ticket()
         sample_ticket()
 
@@ -123,27 +120,26 @@ class AdminTicketApiTests(TestCase):
     def test_create_ticket(self):
         theatre_hall = TheatreHall.objects.create(name="Blue", rows=20, seats_in_row=20)
         play = Play.objects.create(title="Play", description="short description")
-        performance = Performance.objects.create(play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z")
-        user = get_user_model().objects.create_user(f"user{random.randint(1,10000)}2@test.com", "testpass")
+        performance = Performance.objects.create(
+            play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z"
+        )
+        user = get_user_model().objects.create_user(
+            f"user{random.randint(1,10000)}2@test.com", "testpass"
+        )
         reservation = Reservation.objects.create(user=user)
 
         payload = {
             "reservation": reservation.id,
             "performance": performance.id,
             "row": 5,
-            "seat": 15
+            "seat": 15,
         }
 
         res = self.client.post(TICKET_URL, payload)
         self.assertEqual(res.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def test_put_ticket_not_allowed(self):
-        payload = {
-            "reservation": 1,
-            "performance": 2,
-            "row": 5,
-            "seat": 6
-        }
+        payload = {"reservation": 1, "performance": 2, "row": 5, "seat": 6}
 
         ticket = sample_ticket()
         url = detail_url(ticket.id)

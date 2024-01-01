@@ -18,11 +18,7 @@ THEATRE_HALL_URL = reverse("theatre:theatrehall-list")
 
 
 def sample_theatre_hall(**params):
-    defaults = {
-        "name": "Theatre Hall",
-        "rows": 10,
-        "seats_in_row": 30
-    }
+    defaults = {"name": "Theatre Hall", "rows": 10, "seats_in_row": 30}
     defaults.update(params)
 
     return TheatreHall.objects.create(**defaults)
@@ -71,20 +67,12 @@ class AuthenticatedTheatreHallApiTests(TestCase):
         self.assertEqual(res.data, serializer.data)
 
     def test_create_theatre_hall_forbidden(self):
-        payload = {
-            "name": "Theatre Hall",
-            "rows": 10,
-            "seats_in_row": 30
-        }
+        payload = {"name": "Theatre Hall", "rows": 10, "seats_in_row": 30}
         res = self.client.post(THEATRE_HALL_URL, payload)
         self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
     def test_put_theatre_hall_forbidden(self):
-        payload = {
-            "name": "Theatre Hall",
-            "rows": 10,
-            "seats_in_row": 30
-        }
+        payload = {"name": "Theatre Hall", "rows": 10, "seats_in_row": 30}
 
         theatre_hall = sample_theatre_hall()
         url = detail_url(theatre_hall.id)
@@ -111,11 +99,7 @@ class AdminTheatreHallApiTests(TestCase):
         self.client.force_authenticate(self.user)
 
     def test_create_theatre_hall(self):
-        payload = {
-            "name": "Theatre Hall",
-            "rows": 10,
-            "seats_in_row": 30
-        }
+        payload = {"name": "Theatre Hall", "rows": 10, "seats_in_row": 30}
 
         res = self.client.post(THEATRE_HALL_URL, payload)
         theatre_hall = TheatreHall.objects.get(id=res.data["id"])

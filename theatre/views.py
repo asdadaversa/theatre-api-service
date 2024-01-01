@@ -15,7 +15,7 @@ from theatre.models import (
     Play,
     Performance,
     Reservation,
-    Ticket
+    Ticket,
 )
 from theatre.serializers import (
     TheatreHallSerializer,
@@ -35,7 +35,7 @@ from theatre.serializers import (
     PerformanceDetailSerializer,
     PerformanceListSerializer,
     ActorImageSerializer,
-    PlayImageSerializer
+    PlayImageSerializer,
 )
 
 
@@ -105,6 +105,7 @@ class GenreViewSet(viewsets.ModelViewSet):
 class PerformanceViewSet(viewsets.ModelViewSet):
     queryset = Performance.objects.all()
     serializer_class = PerformanceSerializer
+    pagination_class = OrderPagination
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
     def get_queryset(self):
@@ -115,13 +116,13 @@ class PerformanceViewSet(viewsets.ModelViewSet):
 
         if self.action == "list":
             queryset = (
-                queryset
-                .prefetch_related("tickets")
+                queryset.prefetch_related("tickets")
                 .select_related("play", "theatre_hall")
                 .annotate(
-                    tickets_available=(F("theatre_hall__rows")
-                                       * F("theatre_hall__seats_in_row")
-                                       - Count("tickets"))
+                    tickets_available=(
+                        F("theatre_hall__rows") * F("theatre_hall__seats_in_row")
+                        - Count("tickets")
+                    )
                 )
             )
 
@@ -146,10 +147,7 @@ class PerformanceViewSet(viewsets.ModelViewSet):
         parameters=[
             OpenApiParameter(
                 name="date",
-                type={
-                    "type": "datetime.date",
-                    "items": {"type": "datetime.date"}
-                },
+                type={"type": "datetime.date", "items": {"type": "datetime.date"}},
                 description="filtering by date",
             )
         ]
@@ -171,7 +169,7 @@ class ReservationViewSet(
     mixins.ListModelMixin,
     mixins.CreateModelMixin,
     mixins.RetrieveModelMixin,
-    GenericViewSet
+    GenericViewSet,
 ):
     queryset = Reservation.objects.prefetch_related(
         "tickets__performance__play", "tickets__performance__theatre_hall"
@@ -250,7 +248,7 @@ class PlayViewSet(viewsets.ModelViewSet):
         methods=["GET", "POST", "RETRIEVE"],
         detail=True,
         url_path="upload-image",
-        permission_classes=[IsAdminUser]
+        permission_classes=[IsAdminUser],
     )
     def upload_image(self, request, pk=None):
         """Endpoint for uploading image to specific play"""
