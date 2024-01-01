@@ -1,0 +1,6 @@
+[flake8]
+inline-quotes = "
+max-line-length = 79
+exclude =
+    **migrations
+    venv
