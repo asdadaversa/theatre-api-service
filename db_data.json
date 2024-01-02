@@ -1,1 +1,4164 @@
-[{"model": "admin_interface.theme", "pk": 1, "fields": {"name": "Django", "active": false, "title": "Django administration", "title_color": "#F5DD5D", "title_visible": true, "logo": "", "logo_color": "#FFFFFF", "logo_max_width": 400, "logo_max_height": 100, "logo_visible": true, "favicon": "", "env_name": "", "env_color": "#E74C3C", "env_visible_in_header": true, "env_visible_in_favicon": true, "language_chooser_active": true, "language_chooser_control": "default-select", "language_chooser_display": "code", "css_header_background_color": "#0C4B33", "css_header_text_color": "#44B78B", "css_header_link_color": "#FFFFFF", "css_header_link_hover_color": "#C9F0DD", "css_module_background_color": "#44B78B", "css_module_background_selected_color": "#FFFFCC", "css_module_text_color": "#FFFFFF", "css_module_link_color": "#FFFFFF", "css_module_link_selected_color": "#FFFFFF", "css_module_link_hover_color": "#C9F0DD", "css_module_rounded_corners": true, "css_generic_link_color": "#0C3C26", "css_generic_link_hover_color": "#156641", "css_generic_link_active_color": "#29B864", "css_save_button_background_color": "#0C4B33", "css_save_button_background_hover_color": "#0C3C26", "css_save_button_text_color": "#FFFFFF", "css_delete_button_background_color": "#BA2121", "css_delete_button_background_hover_color": "#A41515", "css_delete_button_text_color": "#FFFFFF", "related_modal_active": true, "related_modal_background_color": "#000000", "related_modal_background_opacity": "0.2", "related_modal_rounded_corners": true, "related_modal_close_button_visible": true, "list_filter_highlight": true, "list_filter_dropdown": false, "list_filter_sticky": true, "list_filter_removal_links": false, "foldable_apps": true, "show_fieldsets_as_tabs": false, "show_inlines_as_tabs": false, "collapsible_stacked_inlines": false, "collapsible_stacked_inlines_collapsed": true, "collapsible_tabular_inlines": false, "collapsible_tabular_inlines_collapsed": true, "recent_actions_visible": true, "form_submit_sticky": false, "form_pagination_sticky": false}}, {"model": "admin_interface.theme", "pk": 2, "fields": {"name": "Bootstrap", "active": false, "title": "Django administration", "title_color": "#503873", "title_visible": false, "logo": "", "logo_color": "#503873", "logo_max_width": 400, "logo_max_height": 100, "logo_visible": true, "favicon": "", "env_name": "", "env_color": "#E74C3C", "env_visible_in_header": true, "env_visible_in_favicon": true, "language_chooser_active": true, "language_chooser_control": "default-select", "language_chooser_display": "code", "css_header_background_color": "#FFFFFF", "css_header_text_color": "#463265", "css_header_link_color": "#463265", "css_header_link_hover_color": "#7351A6", "css_module_background_color": "#7351A6", "css_module_background_selected_color": "#FFFFCC", "css_module_text_color": "#FFFFFF", "css_module_link_color": "#CDBFE3", "css_module_link_selected_color": "#FFFFFF", "css_module_link_hover_color": "#FFFFFF", "css_module_rounded_corners": true, "css_generic_link_color": "#463265", "css_generic_link_hover_color": "#7351A6", "css_generic_link_active_color": "#29B864", "css_save_button_background_color": "#5CB85C", "css_save_button_background_hover_color": "#449D44", "css_save_button_text_color": "#FFFFFF", "css_delete_button_background_color": "#D9534F", "css_delete_button_background_hover_color": "#C9302C", "css_delete_button_text_color": "#FFFFFF", "related_modal_active": true, "related_modal_background_color": "#503873", "related_modal_background_opacity": "0.2", "related_modal_rounded_corners": true, "related_modal_close_button_visible": true, "list_filter_highlight": true, "list_filter_dropdown": false, "list_filter_sticky": true, "list_filter_removal_links": false, "foldable_apps": true, "show_fieldsets_as_tabs": false, "show_inlines_as_tabs": false, "collapsible_stacked_inlines": false, "collapsible_stacked_inlines_collapsed": true, "collapsible_tabular_inlines": false, "collapsible_tabular_inlines_collapsed": true, "recent_actions_visible": true, "form_submit_sticky": false, "form_pagination_sticky": false}}, {"model": "admin_interface.theme", "pk": 3, "fields": {"name": "Foundation", "active": false, "title": "Django administration", "title_color": "#DDDDDD", "title_visible": false, "logo": "", "logo_color": "#CCCCCC", "logo_max_width": 400, "logo_max_height": 100, "logo_visible": true, "favicon": "", "env_name": "", "env_color": "#E74C3C", "env_visible_in_header": true, "env_visible_in_favicon": true, "language_chooser_active": true, "language_chooser_control": "default-select", "language_chooser_display": "code", "css_header_background_color": "#2C3840", "css_header_text_color": "#FFFFFF", "css_header_link_color": "#FFFFFF", "css_header_link_hover_color": "#DDDDDD", "css_module_background_color": "#074E68", "css_module_background_selected_color": "#FFFFCC", "css_module_text_color": "#FFFFFF", "css_module_link_color": "#FFFFFF", "css_module_link_selected_color": "#FFFFFF", "css_module_link_hover_color": "#DDDDDD", "css_module_rounded_corners": true, "css_generic_link_color": "#000000", "css_generic_link_hover_color": "#074E68", "css_generic_link_active_color": "#29B864", "css_save_button_background_color": "#2199E8", "css_save_button_background_hover_color": "#1585CF", "css_save_button_text_color": "#FFFFFF", "css_delete_button_background_color": "#CC4B37", "css_delete_button_background_hover_color": "#BF4634", "css_delete_button_text_color": "#FFFFFF", "related_modal_active": true, "related_modal_background_color": "#000000", "related_modal_background_opacity": "0.2", "related_modal_rounded_corners": true, "related_modal_close_button_visible": true, "list_filter_highlight": true, "list_filter_dropdown": false, "list_filter_sticky": true, "list_filter_removal_links": false, "foldable_apps": true, "show_fieldsets_as_tabs": false, "show_inlines_as_tabs": false, "collapsible_stacked_inlines": false, "collapsible_stacked_inlines_collapsed": true, "collapsible_tabular_inlines": false, "collapsible_tabular_inlines_collapsed": true, "recent_actions_visible": true, "form_submit_sticky": false, "form_pagination_sticky": false}}, {"model": "admin_interface.theme", "pk": 4, "fields": {"name": "USWDS", "active": true, "title": "Theatre API service - django admin", "title_color": "#FFFFFF", "title_visible": false, "logo": "", "logo_color": "#FFFFFF", "logo_max_width": 400, "logo_max_height": 100, "logo_visible": true, "favicon": "", "env_name": "", "env_color": "#E74C3C", "env_visible_in_header": true, "env_visible_in_favicon": true, "language_chooser_active": true, "language_chooser_control": "default-select", "language_chooser_display": "code", "css_header_background_color": "#112E51", "css_header_text_color": "#FFFFFF", "css_header_link_color": "#FFFFFF", "css_header_link_hover_color": "#E1F3F8", "css_module_background_color": "#205493", "css_module_background_selected_color": "#FFFFCC", "css_module_text_color": "#FFFFFF", "css_module_link_color": "#FFFFFF", "css_module_link_selected_color": "#FFFFFF", "css_module_link_hover_color": "#E1F3F8", "css_module_rounded_corners": true, "css_generic_link_color": "#205493", "css_generic_link_hover_color": "#0071BC", "css_generic_link_active_color": "#29B864", "css_save_button_background_color": "#205493", "css_save_button_background_hover_color": "#112E51", "css_save_button_text_color": "#FFFFFF", "css_delete_button_background_color": "#CD2026", "css_delete_button_background_hover_color": "#981B1E", "css_delete_button_text_color": "#FFFFFF", "related_modal_active": true, "related_modal_background_color": "#000000", "related_modal_background_opacity": "0.8", "related_modal_rounded_corners": true, "related_modal_close_button_visible": true, "list_filter_highlight": true, "list_filter_dropdown": false, "list_filter_sticky": true, "list_filter_removal_links": false, "foldable_apps": true, "show_fieldsets_as_tabs": false, "show_inlines_as_tabs": false, "collapsible_stacked_inlines": true, "collapsible_stacked_inlines_collapsed": true, "collapsible_tabular_inlines": false, "collapsible_tabular_inlines_collapsed": true, "recent_actions_visible": true, "form_submit_sticky": false, "form_pagination_sticky": false}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2023-12-26T15:11:36.160Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2023-12-26T15:11:36.165Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2023-12-26T15:11:40.669Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2023-12-26T15:11:40.672Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2023-12-26T15:11:43.760Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2023-12-26T15:11:43.767Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Django", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2023-12-26T15:11:47.542Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2023-12-26T15:11:51.421Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2023-12-26T15:11:51.425Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Django", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2023-12-26T15:11:53.810Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2023-12-26T15:11:56.866Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2023-12-26T15:11:59.261Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2023-12-26T15:14:14.631Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2023-12-26T15:14:16.789Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2023-12-26T15:14:18.893Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Django", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2023-12-26T15:14:21.141Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2023-12-26T15:14:23.530Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2023-12-27T12:22:45.823Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2023-12-27T12:22:45.829Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2023-12-27T12:23:02.564Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2023-12-27T12:23:02.570Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2023-12-27T12:23:11.411Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2023-12-27T12:23:11.415Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2023-12-27T12:26:35.433Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2023-12-27T12:26:35.437Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2023-12-27T12:29:55.297Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Control\"]}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2023-12-27T12:30:54.692Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Control\", \"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2023-12-27T14:15:52.609Z", "user": 1, "content_type": 13, "object_id": "1", "object_repr": "Tom Pes", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2023-12-27T14:16:01.261Z", "user": 1, "content_type": 13, "object_id": "2", "object_repr": "Antony Kotik", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2023-12-27T14:16:05.989Z", "user": 1, "content_type": 13, "object_id": "3", "object_repr": "Taras Panda", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2023-12-27T14:16:11.172Z", "user": 1, "content_type": 13, "object_id": "4", "object_repr": "Irina Krug", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2023-12-27T14:16:21.659Z", "user": 1, "content_type": 13, "object_id": "5", "object_repr": "Alina Natash", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2023-12-27T14:16:42.306Z", "user": 1, "content_type": 13, "object_id": "6", "object_repr": "Tonya Krolik", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2023-12-27T14:16:53.073Z", "user": 1, "content_type": 13, "object_id": "7", "object_repr": "Tom Ford", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2023-12-27T14:17:05.390Z", "user": 1, "content_type": 13, "object_id": "8", "object_repr": "Igor Pantera", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2023-12-27T14:17:12.005Z", "user": 1, "content_type": 13, "object_id": "9", "object_repr": "Oksana Kus", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2023-12-27T14:17:22.788Z", "user": 1, "content_type": 13, "object_id": "10", "object_repr": "Tom Dgerr", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2023-12-27T14:17:38.286Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "Drama", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2023-12-27T14:17:47.184Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "History", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2023-12-27T14:17:54.234Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "Geografy", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2023-12-27T14:18:03.449Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "Animal Planet", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2023-12-27T14:18:13.161Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "Romantic", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2023-12-27T14:18:16.704Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "Comedy", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2023-12-27T14:18:21.931Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "Action", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2023-12-27T14:18:36.186Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "Shooter", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2023-12-27T14:18:42.114Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "Blockbaster", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2023-12-27T14:18:49.415Z", "user": 1, "content_type": 8, "object_id": "10", "object_repr": "Alh", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2023-12-27T14:38:06.896Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Newp", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2023-12-27T14:42:05.424Z", "user": 1, "content_type": 14, "object_id": "2", "object_repr": "Astrat", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2023-12-27T14:42:15.889Z", "user": 1, "content_type": 14, "object_id": "3", "object_repr": "Koll", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2023-12-27T14:42:29.095Z", "user": 1, "content_type": 14, "object_id": "4", "object_repr": "Artr", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2023-12-27T14:42:40.534Z", "user": 1, "content_type": 14, "object_id": "5", "object_repr": "Revers", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2023-12-27T14:43:54.863Z", "user": 1, "content_type": 11, "object_id": "1", "object_repr": "White Cat", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2023-12-27T14:44:02.241Z", "user": 1, "content_type": 11, "object_id": "2", "object_repr": "Boris", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2023-12-27T14:44:17.524Z", "user": 1, "content_type": 11, "object_id": "3", "object_repr": "Dream", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2023-12-27T14:44:31.263Z", "user": 1, "content_type": 11, "object_id": "4", "object_repr": "Portet", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2023-12-27T14:44:47.019Z", "user": 1, "content_type": 11, "object_id": "5", "object_repr": "Portrait", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2023-12-27T14:46:23.920Z", "user": 1, "content_type": 11, "object_id": "6", "object_repr": "Geroev Dnipra", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2023-12-27T14:46:50.437Z", "user": 1, "content_type": 11, "object_id": "7", "object_repr": "Best V", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2023-12-27T14:47:11.791Z", "user": 1, "content_type": 11, "object_id": "8", "object_repr": "Battle of Titans", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2023-12-27T14:50:28.117Z", "user": 1, "content_type": 12, "object_id": "1", "object_repr": "White Cat 2024-01-09 14:50:24+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2023-12-27T14:50:51.791Z", "user": 1, "content_type": 12, "object_id": "2", "object_repr": "Geroev Dnipra 2024-01-27 14:50:38+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2023-12-27T14:51:11.735Z", "user": 1, "content_type": 12, "object_id": "3", "object_repr": "Dream 2024-02-04 14:51:06+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2023-12-27T14:51:27.446Z", "user": 1, "content_type": 12, "object_id": "4", "object_repr": "Portet 2024-01-14 14:51:22+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2023-12-27T14:51:47.420Z", "user": 1, "content_type": 12, "object_id": "5", "object_repr": "Portrait 2024-02-04 14:51:33+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2023-12-27T14:52:22.785Z", "user": 1, "content_type": 12, "object_id": "6", "object_repr": "Best V 2024-03-10 14:52:15+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2023-12-27T14:54:06.255Z", "user": 1, "content_type": 6, "object_id": "3", "object_repr": "1tarnink123123e@gmail.com", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2023-12-27T14:54:06.258Z", "user": 1, "content_type": 6, "object_id": "2", "object_repr": "admin12@admin.com", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2023-12-27T14:54:28.730Z", "user": 1, "content_type": 6, "object_id": "4", "object_repr": "Lik77@outlook.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2023-12-27T14:54:49.836Z", "user": 1, "content_type": 6, "object_id": "5", "object_repr": "oebujbukdi@gmail.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2023-12-27T14:55:19.362Z", "user": 1, "content_type": 6, "object_id": "6", "object_repr": "kok@gmail.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2023-12-27T14:56:17.527Z", "user": 1, "content_type": 6, "object_id": "7", "object_repr": "polhj@gmail.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2023-12-27T15:03:48.558Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "2023-12-27 15:03:48.549176+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Best V 2024-03-10 14:52:15+00:00 (row: 11, seat: 15)\"}}]"}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2023-12-27T15:11:06.181Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "2023-12-27 15:11:06.159150+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 11, seat: 5)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 5, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 3, seat: 5)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 6, seat: 11)\"}}]"}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2023-12-27T15:11:41.972Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "2023-12-27 15:11:41.953387+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 5, seat: 11)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 3, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 4, seat: 15)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 6, seat: 11)\"}}]"}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2023-12-27T15:12:24.901Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "2023-12-27 15:12:24.881984+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portet 2024-01-14 14:51:22+00:00 (row: 1, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 2, seat: 1)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 2, seat: 2)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 2, seat: 4)\"}}]"}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2023-12-27T15:13:01.345Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "2023-12-27 15:13:01.328632+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat 2024-01-09 14:50:24+00:00 (row: 5, seat: 11)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat 2024-01-09 14:50:24+00:00 (row: 5, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat 2024-01-09 14:50:24+00:00 (row: 5, seat: 13)\"}}]"}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2023-12-27T15:13:29.658Z", "user": 1, "content_type": 10, "object_id": "6", "object_repr": "2023-12-27 15:13:29.642682+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 5, seat: 11)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 7, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 8, seat: 14)\"}}]"}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2023-12-28T09:01:18.549Z", "user": 1, "content_type": 10, "object_id": "6", "object_repr": "2023-12-27 15:13:29.642682+00:00", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"}}, {"model": "admin.logentry", "pk": 80, "fields": {"action_time": "2023-12-29T20:41:03.517Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 81, "fields": {"action_time": "2023-12-29T20:41:03.526Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 82, "fields": {"action_time": "2023-12-29T20:41:07.202Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Foundation", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 83, "fields": {"action_time": "2023-12-29T20:41:07.207Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 84, "fields": {"action_time": "2023-12-29T20:41:15.296Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Bootstrap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 85, "fields": {"action_time": "2023-12-29T20:41:15.301Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Django", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 86, "fields": {"action_time": "2023-12-29T20:41:34.722Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 87, "fields": {"action_time": "2023-12-29T20:41:34.728Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Django", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"}}, {"model": "admin.logentry", "pk": 88, "fields": {"action_time": "2023-12-29T20:46:35.127Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Collapsible tabular inlines\"]}}]"}}, {"model": "admin.logentry", "pk": 89, "fields": {"action_time": "2023-12-29T20:47:08.777Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Collapsible stacked inlines\"]}}]"}}, {"model": "admin.logentry", "pk": 90, "fields": {"action_time": "2023-12-29T20:47:53.850Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "USWDS", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Collapsible tabular inlines\"]}}]"}}, {"model": "admin.logentry", "pk": 91, "fields": {"action_time": "2023-12-30T10:01:26.994Z", "user": 1, "content_type": 6, "object_id": "10", "object_repr": "pes@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"}}, {"model": "admin.logentry", "pk": 92, "fields": {"action_time": "2023-12-30T10:35:15.310Z", "user": 1, "content_type": 6, "object_id": "1", "object_repr": "admin@pes.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry", "pk": 93, "fields": {"action_time": "2023-12-30T10:39:59.671Z", "user": 11, "content_type": 6, "object_id": "10", "object_repr": "pes@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"}}, {"model": "admin.logentry", "pk": 94, "fields": {"action_time": "2023-12-30T10:41:40.068Z", "user": 11, "content_type": 6, "object_id": "11", "object_repr": "admin@pes1.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry", "pk": 95, "fields": {"action_time": "2023-12-30T10:42:55.015Z", "user": 12, "content_type": 6, "object_id": "1", "object_repr": "admin@pes.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry", "pk": 96, "fields": {"action_time": "2023-12-30T10:43:06.740Z", "user": 12, "content_type": 6, "object_id": "12", "object_repr": "admin@pes2.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry", "pk": 97, "fields": {"action_time": "2023-12-30T17:11:09.781Z", "user": 1, "content_type": 10, "object_id": "14", "object_repr": "2023-12-30 17:11:09.765724+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat1 2024-10-11 12:12:00+00:00 (row: 12, seat: 1)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat1 2024-10-11 12:12:00+00:00 (row: 12, seat: 2)\"}}]"}}, {"model": "admin.logentry", "pk": 98, "fields": {"action_time": "2023-12-30T17:12:34.930Z", "user": 1, "content_type": 10, "object_id": "15", "object_repr": "2023-12-30 17:12:34.928622+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 99, "fields": {"action_time": "2023-12-30T17:14:34.115Z", "user": 1, "content_type": 10, "object_id": "15", "object_repr": "2023-12-30 17:12:34.928622+00:00", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 100, "fields": {"action_time": "2023-12-30T17:36:32.062Z", "user": 1, "content_type": 10, "object_id": "15", "object_repr": "2023-12-30 17:12:34.928622+00:00", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 101, "fields": {"action_time": "2023-12-30T17:36:48.688Z", "user": 1, "content_type": 10, "object_id": "16", "object_repr": "2023-12-30 17:36:48.686348+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 102, "fields": {"action_time": "2023-12-30T19:14:27.672Z", "user": 1, "content_type": 10, "object_id": "18", "object_repr": "2023-12-30 19:14:27.670311+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add content type", "content_type": 4, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change content type", "content_type": 4, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete content type", "content_type": 4, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view content type", "content_type": 4, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add session", "content_type": 5, "codename": "add_session"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change session", "content_type": 5, "codename": "change_session"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete session", "content_type": 5, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view session", "content_type": 5, "codename": "view_session"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add user", "content_type": 6, "codename": "add_user"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change user", "content_type": 6, "codename": "change_user"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete user", "content_type": 6, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view user", "content_type": 6, "codename": "view_user"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add Theme", "content_type": 7, "codename": "add_theme"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change Theme", "content_type": 7, "codename": "change_theme"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete Theme", "content_type": 7, "codename": "delete_theme"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view Theme", "content_type": 7, "codename": "view_theme"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add genre", "content_type": 8, "codename": "add_genre"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change genre", "content_type": 8, "codename": "change_genre"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete genre", "content_type": 8, "codename": "delete_genre"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view genre", "content_type": 8, "codename": "view_genre"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add ticket", "content_type": 9, "codename": "add_ticket"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change ticket", "content_type": 9, "codename": "change_ticket"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete ticket", "content_type": 9, "codename": "delete_ticket"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view ticket", "content_type": 9, "codename": "view_ticket"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add reservation", "content_type": 10, "codename": "add_reservation"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change reservation", "content_type": 10, "codename": "change_reservation"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete reservation", "content_type": 10, "codename": "delete_reservation"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view reservation", "content_type": 10, "codename": "view_reservation"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add play", "content_type": 11, "codename": "add_play"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change play", "content_type": 11, "codename": "change_play"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete play", "content_type": 11, "codename": "delete_play"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can view play", "content_type": 11, "codename": "view_play"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can add performance", "content_type": 12, "codename": "add_performance"}}, {"model": "auth.permission", "pk": 46, "fields": {"name": "Can change performance", "content_type": 12, "codename": "change_performance"}}, {"model": "auth.permission", "pk": 47, "fields": {"name": "Can delete performance", "content_type": 12, "codename": "delete_performance"}}, {"model": "auth.permission", "pk": 48, "fields": {"name": "Can view performance", "content_type": 12, "codename": "view_performance"}}, {"model": "auth.permission", "pk": 49, "fields": {"name": "Can add actor", "content_type": 13, "codename": "add_actor"}}, {"model": "auth.permission", "pk": 50, "fields": {"name": "Can change actor", "content_type": 13, "codename": "change_actor"}}, {"model": "auth.permission", "pk": 51, "fields": {"name": "Can delete actor", "content_type": 13, "codename": "delete_actor"}}, {"model": "auth.permission", "pk": 52, "fields": {"name": "Can view actor", "content_type": 13, "codename": "view_actor"}}, {"model": "auth.permission", "pk": 53, "fields": {"name": "Can add theatre hall", "content_type": 14, "codename": "add_theatrehall"}}, {"model": "auth.permission", "pk": 54, "fields": {"name": "Can change theatre hall", "content_type": 14, "codename": "change_theatrehall"}}, {"model": "auth.permission", "pk": 55, "fields": {"name": "Can delete theatre hall", "content_type": 14, "codename": "delete_theatrehall"}}, {"model": "auth.permission", "pk": 56, "fields": {"name": "Can view theatre hall", "content_type": 14, "codename": "view_theatrehall"}}, {"model": "auth.permission", "pk": 57, "fields": {"name": "Can add Token", "content_type": 15, "codename": "add_token"}}, {"model": "auth.permission", "pk": 58, "fields": {"name": "Can change Token", "content_type": 15, "codename": "change_token"}}, {"model": "auth.permission", "pk": 59, "fields": {"name": "Can delete Token", "content_type": 15, "codename": "delete_token"}}, {"model": "auth.permission", "pk": 60, "fields": {"name": "Can view Token", "content_type": 15, "codename": "view_token"}}, {"model": "auth.permission", "pk": 61, "fields": {"name": "Can add token", "content_type": 16, "codename": "add_tokenproxy"}}, {"model": "auth.permission", "pk": 62, "fields": {"name": "Can change token", "content_type": 16, "codename": "change_tokenproxy"}}, {"model": "auth.permission", "pk": 63, "fields": {"name": "Can delete token", "content_type": 16, "codename": "delete_tokenproxy"}}, {"model": "auth.permission", "pk": 64, "fields": {"name": "Can view token", "content_type": 16, "codename": "view_tokenproxy"}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "user", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "admin_interface", "model": "theme"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "theatre", "model": "genre"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "theatre", "model": "ticket"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "theatre", "model": "reservation"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "theatre", "model": "play"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "theatre", "model": "performance"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "theatre", "model": "actor"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "theatre", "model": "theatrehall"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "authtoken", "model": "token"}}, {"model": "contenttypes.contenttype", "pk": 16, "fields": {"app_label": "authtoken", "model": "tokenproxy"}}, {"model": "sessions.session", "pk": "8noxisb83wptipp9yadz7p31hehjfqjr", "fields": {"session_data": ".eJxVjDEOAiEURO9CbQiwfPhY2nsGAvtBVg0ky25lvLuSbKHNFPPezIv5sG_F7z2tfiF2ZpKdfrsY5keqA9A91Fvjc6vbukQ-FH7Qzq-N0vNyuH8HJfQy1joCpmRk1tFOyYDDLClHo1QwStjZ6gACnSQnwWSy30CBBBMCkiL2_gDfUTdl:1rJWoK:jH6iu9QPCs44_QT89bxgeWz-TGpzK-gexAuc2it6H5E", "expire_date": "2024-01-13T10:43:20.436Z"}}, {"model": "sessions.session", "pk": "zi799z3s5vnsitnoiqt9hfc2fy6a2k0l", "fields": {"session_data": ".eJxVjDEOAiEURO9CbQiwfPhY2nsGAvtBVg0ky25lvLuSbKHNFPPezIv5sG_F7z2tfiF2ZpKdfrsY5keqA9A91Fvjc6vbukQ-FH7Qzq-N0vNyuH8HJfQy1joCpmRk1tFOyYDDLClHo1QwStjZ6gACnSQnwWSy30CBBBMCkiL2_gDfUTdl:1rImF3:GDn4PX68PdObR8rPkZIdqsRhgxDhLovhbPIxkjk3nY0", "expire_date": "2024-01-11T08:59:49.619Z"}}, {"model": "user.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$720000$XfeiMt3RHNVVkNO4AT9xdD$+6pJtJVyJBnaU/btlybjwb9R4ifb2E3xK+qX1qT0fb0=", "last_login": "2023-12-30T10:43:20.434Z", "is_superuser": true, "first_name": "", "last_name": "", "is_staff": true, "is_active": true, "date_joined": "2023-12-26T15:06:47Z", "email": "admin@pes.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 4, "fields": {"password": "pbkdf2_sha256$720000$lDSlRRSkfkevQBg64Yqk8v$eo/FOTbUK61slm8YYF04MV2ggbiDsWDwdHpq6AZzseM=", "last_login": null, "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-27T14:54:28.513Z", "email": "Lik77@outlook.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 5, "fields": {"password": "pbkdf2_sha256$720000$Ajcg3uqbAXIHG0oVOKwli2$u9bCcAueMRGboIaBSdwWVsCupRHTd4TgEnqRevfEDr0=", "last_login": null, "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-27T14:54:49.621Z", "email": "oebujbukdi@gmail.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 6, "fields": {"password": "pbkdf2_sha256$720000$qpKKQv1eYxm9cq1F72yrIx$W+c0QlcwpENu3QqoH3VNBgTvjl2BgXBy8U6pBzzv69o=", "last_login": null, "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-27T14:55:19.149Z", "email": "kok@gmail.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 7, "fields": {"password": "pbkdf2_sha256$720000$cHuaRQNYUzcSYIx5y3APyY$dhgruzba+Y4gRjmayO1WLveU/MwOGa7s5RK0Iw0aAh0=", "last_login": null, "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-27T14:56:17.308Z", "email": "polhj@gmail.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 8, "fields": {"password": "pbkdf2_sha256$720000$3rEm2dxzF8lGom6K3ss49Q$ctBr9FogsHQjD2FKUsTxtCBAepLN8XCImpAgRywDAsE=", "last_login": null, "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-30T07:40:53.970Z", "email": "kljjlkj@gmail.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 9, "fields": {"password": "pbkdf2_sha256$720000$O9ZuEqEUlwtWddJz5fgkHD$4NfkXcX9gUtREumsXfU6wd762X4xmkzqip7/DVF/hh4=", "last_login": null, "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-30T09:46:34.629Z", "email": "user97912@test.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 10, "fields": {"password": "pbkdf2_sha256$720000$aHvwfv8RS6Rj5L2nK9jH4I$MnS1TPSNHUMifdTYDiWrM9COqLzPcg9R4W5E26RQD8A=", "last_login": "2023-12-30T10:38:51Z", "is_superuser": false, "first_name": "", "last_name": "", "is_staff": false, "is_active": true, "date_joined": "2023-12-30T10:00:05Z", "email": "pes@gmail.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 11, "fields": {"password": "pbkdf2_sha256$720000$D3Uc2cPzfBXNmrzHK7eEfa$so/CGT50ve2SLjKNrcb/YDqaWdC60oQMY3BqLKAWYVc=", "last_login": "2023-12-30T10:42:05.614Z", "is_superuser": false, "first_name": "", "last_name": "", "is_staff": true, "is_active": true, "date_joined": "2023-12-30T10:39:24Z", "email": "admin@pes1.com", "groups": [], "user_permissions": []}}, {"model": "user.user", "pk": 12, "fields": {"password": "pbkdf2_sha256$720000$ZUOINe42JTz3VgNAwzlSUd$LkjkR0gCQQVQMqUUXDzyXCkQBGnKxwLdkTHMB7HnFTI=", "last_login": "2023-12-30T10:42:43Z", "is_superuser": false, "first_name": "", "last_name": "", "is_staff": true, "is_active": true, "date_joined": "2023-12-30T10:42:29Z", "email": "admin@pes2.com", "groups": [], "user_permissions": []}}, {"model": "theatre.theatrehall", "pk": 1, "fields": {"name": "Newp", "rows": 12, "seats_in_row": 15}}, {"model": "theatre.theatrehall", "pk": 2, "fields": {"name": "Astrat", "rows": 50, "seats_in_row": 15}}, {"model": "theatre.theatrehall", "pk": 3, "fields": {"name": "Koll", "rows": 40, "seats_in_row": 12}}, {"model": "theatre.theatrehall", "pk": 4, "fields": {"name": "Artr", "rows": 35, "seats_in_row": 30}}, {"model": "theatre.theatrehall", "pk": 5, "fields": {"name": "Revers", "rows": 21, "seats_in_row": 56}}, {"model": "theatre.theatrehall", "pk": 6, "fields": {"name": "Poridge", "rows": 15, "seats_in_row": 20}}, {"model": "theatre.theatrehall", "pk": 7, "fields": {"name": "psarnya", "rows": 20, "seats_in_row": 30}}, {"model": "theatre.theatrehall", "pk": 8, "fields": {"name": "Blue", "rows": 20, "seats_in_row": 20}}, {"model": "theatre.theatrehall", "pk": 9, "fields": {"name": "Blue", "rows": 20, "seats_in_row": 20}}, {"model": "theatre.theatrehall", "pk": 10, "fields": {"name": "Blue", "rows": 20, "seats_in_row": 20}}, {"model": "theatre.actor", "pk": 1, "fields": {"first_name": "Tom4", "last_name": "Pes", "image": "uploads/actors/tom4-pes-b8a00efa-dccb-46ad-bc0d-a5ab396348ff.jpeg"}}, {"model": "theatre.actor", "pk": 2, "fields": {"first_name": "Antony", "last_name": "Kotik1", "image": ""}}, {"model": "theatre.actor", "pk": 3, "fields": {"first_name": "Taras", "last_name": "Panda", "image": ""}}, {"model": "theatre.actor", "pk": 4, "fields": {"first_name": "Irina", "last_name": "Krug", "image": ""}}, {"model": "theatre.actor", "pk": 5, "fields": {"first_name": "Alina", "last_name": "Natash", "image": ""}}, {"model": "theatre.actor", "pk": 6, "fields": {"first_name": "Tonya", "last_name": "Krolik", "image": ""}}, {"model": "theatre.actor", "pk": 7, "fields": {"first_name": "Tom", "last_name": "Ford", "image": ""}}, {"model": "theatre.actor", "pk": 8, "fields": {"first_name": "Igor", "last_name": "Pantera", "image": ""}}, {"model": "theatre.actor", "pk": 9, "fields": {"first_name": "Oksana", "last_name": "Kus", "image": ""}}, {"model": "theatre.actor", "pk": 10, "fields": {"first_name": "Tom", "last_name": "Dgerr", "image": ""}}, {"model": "theatre.actor", "pk": 11, "fields": {"first_name": "string", "last_name": "string", "image": ""}}, {"model": "theatre.actor", "pk": 12, "fields": {"first_name": "string", "last_name": "string", "image": ""}}, {"model": "theatre.actor", "pk": 13, "fields": {"first_name": "string", "last_name": "string", "image": ""}}, {"model": "theatre.genre", "pk": 1, "fields": {"name": "Drama"}}, {"model": "theatre.genre", "pk": 2, "fields": {"name": "History"}}, {"model": "theatre.genre", "pk": 3, "fields": {"name": "Geografy"}}, {"model": "theatre.genre", "pk": 4, "fields": {"name": "Animal Planet"}}, {"model": "theatre.genre", "pk": 5, "fields": {"name": "Romantic"}}, {"model": "theatre.genre", "pk": 6, "fields": {"name": "Comedy"}}, {"model": "theatre.genre", "pk": 7, "fields": {"name": "Action"}}, {"model": "theatre.genre", "pk": 8, "fields": {"name": "Shooter"}}, {"model": "theatre.genre", "pk": 9, "fields": {"name": "Blockbaster"}}, {"model": "theatre.genre", "pk": 10, "fields": {"name": "Alh"}}, {"model": "theatre.play", "pk": 1, "fields": {"title": "White Cat1", "description": "Some play description. Good play, without any age restrictions", "image": "uploads/plays/white-cat1-5e384e84-e68c-4688-8425-32f009aff571.jpeg", "genres": [4], "actors": [2]}}, {"model": "theatre.play", "pk": 2, "fields": {"title": "Boris", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [2], "actors": [3]}}, {"model": "theatre.play", "pk": 3, "fields": {"title": "Dream", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [5], "actors": [5]}}, {"model": "theatre.play", "pk": 4, "fields": {"title": "Portet", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [9], "actors": [6, 7]}}, {"model": "theatre.play", "pk": 5, "fields": {"title": "Portrait", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [6], "actors": [8, 9, 10]}}, {"model": "theatre.play", "pk": 6, "fields": {"title": "Geroev Dnipra", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [8], "actors": [2, 3, 4]}}, {"model": "theatre.play", "pk": 7, "fields": {"title": "Best V", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [9], "actors": [2, 3, 4]}}, {"model": "theatre.play", "pk": 8, "fields": {"title": "Battle of Titans", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [5], "actors": [5]}}, {"model": "theatre.play", "pk": 9, "fields": {"title": "Sobaki USSR", "description": "Some play description. Good play, without any age restrictions", "image": "", "genres": [1, 4], "actors": [1, 2, 3]}}, {"model": "theatre.play", "pk": 10, "fields": {"title": "KK", "description": "jlkjl/", "image": "", "genres": [2], "actors": [3]}}, {"model": "theatre.play", "pk": 11, "fields": {"title": "kjkl", "description": "kjlkj", "image": "", "genres": [7], "actors": [5]}}, {"model": "theatre.play", "pk": 12, "fields": {"title": "sdf", "description": "sdfsdf", "image": "uploads/plays/sdf-3d16faf5-cd8b-43ed-80e9-f2fe76b83b95.jpeg", "genres": [3], "actors": [7]}}, {"model": "theatre.play", "pk": 13, "fields": {"title": "sdf", "description": "sdf", "image": "uploads/plays/sdf-33c135bd-6e0b-4432-b40f-132285cfe170.jpeg", "genres": [2], "actors": [5]}}, {"model": "theatre.play", "pk": 14, "fields": {"title": "sdf", "description": "sdf", "image": "uploads/plays/sdf-5f3c08b9-7bee-4913-ac7f-65e50494df5d.jpeg", "genres": [2], "actors": [8]}}, {"model": "theatre.play", "pk": 15, "fields": {"title": "sdf", "description": "sdf", "image": "uploads/plays/sdf-632441db-2374-4de1-a064-a049ab2817a8.jpeg", "genres": [2], "actors": [8]}}, {"model": "theatre.play", "pk": 16, "fields": {"title": "sdf", "description": "sdf", "image": "uploads/plays/sdf-aae5a3a4-25e9-4d12-ba66-2bdf4f6d7f89.jpeg", "genres": [2], "actors": [8]}}, {"model": "theatre.play", "pk": 17, "fields": {"title": "jkkjjkh", "description": ",k.lk", "image": "", "genres": [3], "actors": [6]}}, {"model": "theatre.play", "pk": 18, "fields": {"title": "Play", "description": "short description", "image": "", "genres": [], "actors": []}}, {"model": "theatre.play", "pk": 19, "fields": {"title": "Babuim", "description": "babuin", "image": "", "genres": [], "actors": []}}, {"model": "theatre.play", "pk": 20, "fields": {"title": "Sample play", "description": "Sample description", "image": "", "genres": [], "actors": []}}, {"model": "theatre.performance", "pk": 1, "fields": {"show_time": "2024-01-09T14:50:24Z", "play": 1, "theatre_hall": 5}}, {"model": "theatre.performance", "pk": 2, "fields": {"show_time": "2024-01-27T14:50:38Z", "play": 6, "theatre_hall": 4}}, {"model": "theatre.performance", "pk": 3, "fields": {"show_time": "2024-02-04T14:51:06Z", "play": 3, "theatre_hall": 3}}, {"model": "theatre.performance", "pk": 4, "fields": {"show_time": "2024-01-14T14:51:22Z", "play": 4, "theatre_hall": 2}}, {"model": "theatre.performance", "pk": 5, "fields": {"show_time": "2024-02-04T14:51:33Z", "play": 5, "theatre_hall": 1}}, {"model": "theatre.performance", "pk": 6, "fields": {"show_time": "2024-03-10T14:52:15Z", "play": 7, "theatre_hall": 1}}, {"model": "theatre.performance", "pk": 7, "fields": {"show_time": "2024-10-11T12:12:00Z", "play": 1, "theatre_hall": 2}}, {"model": "theatre.performance", "pk": 8, "fields": {"show_time": "2024-03-10T14:52:15Z", "play": 18, "theatre_hall": 8}}, {"model": "theatre.performance", "pk": 9, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 10, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 11, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 12, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 13, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 14, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 15, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 16, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 17, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 18, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 19, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 20, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 21, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 22, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 23, "fields": {"show_time": "2022-06-07T14:00:00Z", "play": 19, "theatre_hall": 9}}, {"model": "theatre.performance", "pk": 24, "fields": {"show_time": "2022-06-03T14:00:00Z", "play": 20, "theatre_hall": 10}}, {"model": "theatre.performance", "pk": 25, "fields": {"show_time": "2022-06-03T14:00:00Z", "play": 20, "theatre_hall": 10}}, {"model": "theatre.reservation", "pk": 1, "fields": {"created_at": "2023-12-27T15:03:48.549Z", "user": 4}}, {"model": "theatre.reservation", "pk": 2, "fields": {"created_at": "2023-12-27T15:11:06.159Z", "user": 4}}, {"model": "theatre.reservation", "pk": 3, "fields": {"created_at": "2023-12-27T15:11:41.953Z", "user": 6}}, {"model": "theatre.reservation", "pk": 4, "fields": {"created_at": "2023-12-27T15:12:24.881Z", "user": 5}}, {"model": "theatre.reservation", "pk": 5, "fields": {"created_at": "2023-12-27T15:13:01.328Z", "user": 7}}, {"model": "theatre.reservation", "pk": 6, "fields": {"created_at": "2023-12-27T15:13:29.642Z", "user": 1}}, {"model": "theatre.reservation", "pk": 7, "fields": {"created_at": "2023-12-28T13:31:55.396Z", "user": 1}}, {"model": "theatre.reservation", "pk": 8, "fields": {"created_at": "2023-12-28T13:44:48.310Z", "user": 1}}, {"model": "theatre.reservation", "pk": 9, "fields": {"created_at": "2023-12-28T13:44:55.960Z", "user": 1}}, {"model": "theatre.reservation", "pk": 10, "fields": {"created_at": "2023-12-28T13:45:05.074Z", "user": 1}}, {"model": "theatre.reservation", "pk": 11, "fields": {"created_at": "2023-12-28T13:46:42.212Z", "user": 1}}, {"model": "theatre.reservation", "pk": 12, "fields": {"created_at": "2023-12-28T15:24:27.493Z", "user": 1}}, {"model": "theatre.reservation", "pk": 13, "fields": {"created_at": "2023-12-30T09:46:38.999Z", "user": 9}}, {"model": "theatre.reservation", "pk": 14, "fields": {"created_at": "2023-12-30T17:11:09.765Z", "user": 10}}, {"model": "theatre.reservation", "pk": 15, "fields": {"created_at": "2023-12-30T17:12:34.928Z", "user": 10}}, {"model": "theatre.reservation", "pk": 16, "fields": {"created_at": "2023-12-30T17:36:48.686Z", "user": 10}}, {"model": "theatre.reservation", "pk": 17, "fields": {"created_at": "2023-12-30T18:12:43.517Z", "user": 1}}, {"model": "theatre.reservation", "pk": 18, "fields": {"created_at": "2023-12-30T19:14:27.670Z", "user": 4}}, {"model": "theatre.reservation", "pk": 19, "fields": {"created_at": "2023-12-30T19:28:12.725Z", "user": 1}}, {"model": "theatre.reservation", "pk": 20, "fields": {"created_at": "2023-12-31T07:23:32.895Z", "user": 1}}, {"model": "theatre.reservation", "pk": 21, "fields": {"created_at": "2023-12-31T07:34:21.087Z", "user": 10}}, {"model": "theatre.reservation", "pk": 22, "fields": {"created_at": "2023-12-31T07:43:18.588Z", "user": 10}}, {"model": "theatre.reservation", "pk": 23, "fields": {"created_at": "2023-12-31T07:44:34.237Z", "user": 10}}, {"model": "theatre.reservation", "pk": 24, "fields": {"created_at": "2023-12-31T08:05:08.704Z", "user": 10}}, {"model": "theatre.reservation", "pk": 25, "fields": {"created_at": "2023-12-31T08:28:51.407Z", "user": 10}}, {"model": "theatre.reservation", "pk": 26, "fields": {"created_at": "2023-12-31T08:43:26.722Z", "user": 10}}, {"model": "theatre.reservation", "pk": 27, "fields": {"created_at": "2023-12-31T08:44:27.786Z", "user": 10}}, {"model": "theatre.reservation", "pk": 28, "fields": {"created_at": "2023-12-31T08:44:47.589Z", "user": 10}}, {"model": "theatre.reservation", "pk": 29, "fields": {"created_at": "2023-12-31T08:45:01.430Z", "user": 10}}, {"model": "theatre.reservation", "pk": 30, "fields": {"created_at": "2023-12-31T08:45:55.197Z", "user": 10}}, {"model": "theatre.reservation", "pk": 31, "fields": {"created_at": "2023-12-31T08:49:50.143Z", "user": 10}}, {"model": "theatre.reservation", "pk": 32, "fields": {"created_at": "2023-12-31T08:51:36.879Z", "user": 10}}, {"model": "theatre.reservation", "pk": 33, "fields": {"created_at": "2023-12-31T08:54:19.258Z", "user": 10}}, {"model": "theatre.reservation", "pk": 34, "fields": {"created_at": "2023-12-31T09:00:08.614Z", "user": 10}}, {"model": "theatre.reservation", "pk": 35, "fields": {"created_at": "2023-12-31T09:26:21.803Z", "user": 10}}, {"model": "theatre.reservation", "pk": 36, "fields": {"created_at": "2023-12-31T10:59:54.014Z", "user": 10}}, {"model": "theatre.reservation", "pk": 37, "fields": {"created_at": "2023-12-31T14:47:57.571Z", "user": 10}}, {"model": "theatre.ticket", "pk": 1, "fields": {"performance": 6, "reservation": 35, "row": 9, "seat": 15}}, {"model": "theatre.ticket", "pk": 2, "fields": {"performance": 2, "reservation": 2, "row": 11, "seat": 5}}, {"model": "theatre.ticket", "pk": 3, "fields": {"performance": 2, "reservation": 2, "row": 5, "seat": 12}}, {"model": "theatre.ticket", "pk": 4, "fields": {"performance": 2, "reservation": 2, "row": 3, "seat": 5}}, {"model": "theatre.ticket", "pk": 5, "fields": {"performance": 2, "reservation": 2, "row": 6, "seat": 11}}, {"model": "theatre.ticket", "pk": 6, "fields": {"performance": 5, "reservation": 3, "row": 5, "seat": 11}}, {"model": "theatre.ticket", "pk": 7, "fields": {"performance": 5, "reservation": 3, "row": 3, "seat": 12}}, {"model": "theatre.ticket", "pk": 8, "fields": {"performance": 5, "reservation": 3, "row": 4, "seat": 15}}, {"model": "theatre.ticket", "pk": 9, "fields": {"performance": 5, "reservation": 3, "row": 6, "seat": 11}}, {"model": "theatre.ticket", "pk": 10, "fields": {"performance": 4, "reservation": 4, "row": 1, "seat": 12}}, {"model": "theatre.ticket", "pk": 11, "fields": {"performance": 5, "reservation": 4, "row": 2, "seat": 1}}, {"model": "theatre.ticket", "pk": 12, "fields": {"performance": 5, "reservation": 4, "row": 2, "seat": 2}}, {"model": "theatre.ticket", "pk": 13, "fields": {"performance": 5, "reservation": 4, "row": 2, "seat": 4}}, {"model": "theatre.ticket", "pk": 14, "fields": {"performance": 1, "reservation": 5, "row": 5, "seat": 11}}, {"model": "theatre.ticket", "pk": 15, "fields": {"performance": 1, "reservation": 5, "row": 5, "seat": 12}}, {"model": "theatre.ticket", "pk": 16, "fields": {"performance": 1, "reservation": 5, "row": 5, "seat": 13}}, {"model": "theatre.ticket", "pk": 17, "fields": {"performance": 2, "reservation": 6, "row": 5, "seat": 11}}, {"model": "theatre.ticket", "pk": 18, "fields": {"performance": 2, "reservation": 6, "row": 7, "seat": 12}}, {"model": "theatre.ticket", "pk": 19, "fields": {"performance": 2, "reservation": 6, "row": 8, "seat": 14}}, {"model": "theatre.ticket", "pk": 20, "fields": {"performance": 6, "reservation": 6, "row": 11, "seat": 11}}, {"model": "theatre.ticket", "pk": 21, "fields": {"performance": 1, "reservation": 11, "row": 2, "seat": 1}}, {"model": "theatre.ticket", "pk": 22, "fields": {"performance": 1, "reservation": 11, "row": 2, "seat": 2}}, {"model": "theatre.ticket", "pk": 23, "fields": {"performance": 2, "reservation": 12, "row": 8, "seat": 3}}, {"model": "theatre.ticket", "pk": 24, "fields": {"performance": 2, "reservation": 12, "row": 7, "seat": 11}}, {"model": "theatre.ticket", "pk": 25, "fields": {"performance": 7, "reservation": 12, "row": 1, "seat": 2}}, {"model": "theatre.ticket", "pk": 26, "fields": {"performance": 7, "reservation": 12, "row": 11, "seat": 11}}, {"model": "theatre.ticket", "pk": 27, "fields": {"performance": 1, "reservation": 1, "row": 1, "seat": 1}}, {"model": "theatre.ticket", "pk": 28, "fields": {"performance": 1, "reservation": 1, "row": 12, "seat": 2}}, {"model": "theatre.ticket", "pk": 29, "fields": {"performance": 1, "reservation": 1, "row": 11, "seat": 20}}, {"model": "theatre.ticket", "pk": 30, "fields": {"performance": 1, "reservation": 1, "row": 12, "seat": 20}}, {"model": "theatre.ticket", "pk": 31, "fields": {"performance": 2, "reservation": 1, "row": 5, "seat": 10}}, {"model": "theatre.ticket", "pk": 32, "fields": {"performance": 3, "reservation": 2, "row": 5, "seat": 10}}, {"model": "theatre.ticket", "pk": 33, "fields": {"performance": 1, "reservation": 4, "row": 5, "seat": 10}}, {"model": "theatre.ticket", "pk": 34, "fields": {"performance": 3, "reservation": 5, "row": 1, "seat": 1}}, {"model": "theatre.ticket", "pk": 35, "fields": {"performance": 7, "reservation": 13, "row": 4, "seat": 11}}, {"model": "theatre.ticket", "pk": 36, "fields": {"performance": 7, "reservation": 14, "row": 12, "seat": 1}}, {"model": "theatre.ticket", "pk": 37, "fields": {"performance": 7, "reservation": 14, "row": 12, "seat": 2}}, {"model": "theatre.ticket", "pk": 38, "fields": {"performance": 6, "reservation": 17, "row": 2, "seat": 1}}, {"model": "theatre.ticket", "pk": 39, "fields": {"performance": 6, "reservation": 17, "row": 2, "seat": 2}}, {"model": "theatre.ticket", "pk": 40, "fields": {"performance": 7, "reservation": 18, "row": 13, "seat": 1}}, {"model": "theatre.ticket", "pk": 41, "fields": {"performance": 4, "reservation": 19, "row": 2, "seat": 1}}, {"model": "theatre.ticket", "pk": 42, "fields": {"performance": 4, "reservation": 19, "row": 2, "seat": 2}}, {"model": "theatre.ticket", "pk": 43, "fields": {"performance": 7, "reservation": 20, "row": 2, "seat": 1}}, {"model": "theatre.ticket", "pk": 44, "fields": {"performance": 7, "reservation": 20, "row": 2, "seat": 2}}, {"model": "theatre.ticket", "pk": 45, "fields": {"performance": 7, "reservation": 21, "row": 2, "seat": 3}}, {"model": "theatre.ticket", "pk": 46, "fields": {"performance": 7, "reservation": 21, "row": 2, "seat": 4}}, {"model": "theatre.ticket", "pk": 47, "fields": {"performance": 5, "reservation": 22, "row": 6, "seat": 7}}, {"model": "theatre.ticket", "pk": 48, "fields": {"performance": 1, "reservation": 22, "row": 8, "seat": 7}}, {"model": "theatre.ticket", "pk": 49, "fields": {"performance": 5, "reservation": 23, "row": 9, "seat": 9}}, {"model": "theatre.ticket", "pk": 50, "fields": {"performance": 1, "reservation": 23, "row": 9, "seat": 9}}, {"model": "theatre.ticket", "pk": 51, "fields": {"performance": 1, "reservation": 24, "row": 2, "seat": 11}}, {"model": "theatre.ticket", "pk": 52, "fields": {"performance": 1, "reservation": 24, "row": 2, "seat": 12}}, {"model": "theatre.ticket", "pk": 53, "fields": {"performance": 1, "reservation": 25, "row": 4, "seat": 15}}, {"model": "theatre.ticket", "pk": 54, "fields": {"performance": 1, "reservation": 25, "row": 4, "seat": 12}}, {"model": "theatre.ticket", "pk": 55, "fields": {"performance": 6, "reservation": 26, "row": 2, "seat": 15}}, {"model": "theatre.ticket", "pk": 56, "fields": {"performance": 7, "reservation": 27, "row": 2, "seat": 15}}, {"model": "theatre.ticket", "pk": 57, "fields": {"performance": 8, "reservation": 28, "row": 2, "seat": 15}}, {"model": "theatre.ticket", "pk": 58, "fields": {"performance": 8, "reservation": 29, "row": 4, "seat": 15}}, {"model": "theatre.ticket", "pk": 59, "fields": {"performance": 8, "reservation": 30, "row": 6, "seat": 15}}, {"model": "theatre.ticket", "pk": 60, "fields": {"performance": 8, "reservation": 31, "row": 7, "seat": 15}}, {"model": "theatre.ticket", "pk": 61, "fields": {"performance": 2, "reservation": 32, "row": 7, "seat": 15}}, {"model": "theatre.ticket", "pk": 62, "fields": {"performance": 1, "reservation": 33, "row": 7, "seat": 15}}, {"model": "theatre.ticket", "pk": 63, "fields": {"performance": 4, "reservation": 34, "row": 4, "seat": 11}}, {"model": "theatre.ticket", "pk": 64, "fields": {"performance": 8, "reservation": 34, "row": 4, "seat": 11}}, {"model": "theatre.ticket", "pk": 65, "fields": {"performance": 1, "reservation": 35, "row": 11, "seat": 11}}, {"model": "theatre.ticket", "pk": 66, "fields": {"performance": 1, "reservation": 35, "row": 14, "seat": 11}}, {"model": "theatre.ticket", "pk": 67, "fields": {"performance": 1, "reservation": 36, "row": 14, "seat": 5}}, {"model": "theatre.ticket", "pk": 68, "fields": {"performance": 1, "reservation": 36, "row": 13, "seat": 9}}, {"model": "theatre.ticket", "pk": 69, "fields": {"performance": 1, "reservation": 37, "row": 11, "seat": 12}}, {"model": "theatre.ticket", "pk": 70, "fields": {"performance": 1, "reservation": 37, "row": 14, "seat": 12}}, {"model": "authtoken.token", "pk": "bed9fdb722e2a3377ccf68990525e4f1d54e9b93", "fields": {"user": 1, "created": "2023-12-27T13:16:01.122Z"}}]
+[
+{
+    "model": "admin_interface.theme",
+    "pk": 1,
+    "fields": {
+        "name": "Django",
+        "active": false,
+        "title": "Django administration",
+        "title_color": "#F5DD5D",
+        "title_visible": true,
+        "logo": "",
+        "logo_color": "#FFFFFF",
+        "logo_max_width": 400,
+        "logo_max_height": 100,
+        "logo_visible": true,
+        "favicon": "",
+        "env_name": "",
+        "env_color": "#E74C3C",
+        "env_visible_in_header": true,
+        "env_visible_in_favicon": true,
+        "language_chooser_active": true,
+        "language_chooser_control": "default-select",
+        "language_chooser_display": "code",
+        "css_header_background_color": "#0C4B33",
+        "css_header_text_color": "#44B78B",
+        "css_header_link_color": "#FFFFFF",
+        "css_header_link_hover_color": "#C9F0DD",
+        "css_module_background_color": "#44B78B",
+        "css_module_background_selected_color": "#FFFFCC",
+        "css_module_text_color": "#FFFFFF",
+        "css_module_link_color": "#FFFFFF",
+        "css_module_link_selected_color": "#FFFFFF",
+        "css_module_link_hover_color": "#C9F0DD",
+        "css_module_rounded_corners": true,
+        "css_generic_link_color": "#0C3C26",
+        "css_generic_link_hover_color": "#156641",
+        "css_generic_link_active_color": "#29B864",
+        "css_save_button_background_color": "#0C4B33",
+        "css_save_button_background_hover_color": "#0C3C26",
+        "css_save_button_text_color": "#FFFFFF",
+        "css_delete_button_background_color": "#BA2121",
+        "css_delete_button_background_hover_color": "#A41515",
+        "css_delete_button_text_color": "#FFFFFF",
+        "related_modal_active": true,
+        "related_modal_background_color": "#000000",
+        "related_modal_background_opacity": "0.2",
+        "related_modal_rounded_corners": true,
+        "related_modal_close_button_visible": true,
+        "list_filter_highlight": true,
+        "list_filter_dropdown": false,
+        "list_filter_sticky": true,
+        "list_filter_removal_links": false,
+        "foldable_apps": true,
+        "show_fieldsets_as_tabs": false,
+        "show_inlines_as_tabs": false,
+        "collapsible_stacked_inlines": false,
+        "collapsible_stacked_inlines_collapsed": true,
+        "collapsible_tabular_inlines": false,
+        "collapsible_tabular_inlines_collapsed": true,
+        "recent_actions_visible": true,
+        "form_submit_sticky": false,
+        "form_pagination_sticky": false
+    }
+},
+{
+    "model": "admin_interface.theme",
+    "pk": 2,
+    "fields": {
+        "name": "Bootstrap",
+        "active": false,
+        "title": "Django administration",
+        "title_color": "#503873",
+        "title_visible": false,
+        "logo": "",
+        "logo_color": "#503873",
+        "logo_max_width": 400,
+        "logo_max_height": 100,
+        "logo_visible": true,
+        "favicon": "",
+        "env_name": "",
+        "env_color": "#E74C3C",
+        "env_visible_in_header": true,
+        "env_visible_in_favicon": true,
+        "language_chooser_active": true,
+        "language_chooser_control": "default-select",
+        "language_chooser_display": "code",
+        "css_header_background_color": "#FFFFFF",
+        "css_header_text_color": "#463265",
+        "css_header_link_color": "#463265",
+        "css_header_link_hover_color": "#7351A6",
+        "css_module_background_color": "#7351A6",
+        "css_module_background_selected_color": "#FFFFCC",
+        "css_module_text_color": "#FFFFFF",
+        "css_module_link_color": "#CDBFE3",
+        "css_module_link_selected_color": "#FFFFFF",
+        "css_module_link_hover_color": "#FFFFFF",
+        "css_module_rounded_corners": true,
+        "css_generic_link_color": "#463265",
+        "css_generic_link_hover_color": "#7351A6",
+        "css_generic_link_active_color": "#29B864",
+        "css_save_button_background_color": "#5CB85C",
+        "css_save_button_background_hover_color": "#449D44",
+        "css_save_button_text_color": "#FFFFFF",
+        "css_delete_button_background_color": "#D9534F",
+        "css_delete_button_background_hover_color": "#C9302C",
+        "css_delete_button_text_color": "#FFFFFF",
+        "related_modal_active": true,
+        "related_modal_background_color": "#503873",
+        "related_modal_background_opacity": "0.2",
+        "related_modal_rounded_corners": true,
+        "related_modal_close_button_visible": true,
+        "list_filter_highlight": true,
+        "list_filter_dropdown": false,
+        "list_filter_sticky": true,
+        "list_filter_removal_links": false,
+        "foldable_apps": true,
+        "show_fieldsets_as_tabs": false,
+        "show_inlines_as_tabs": false,
+        "collapsible_stacked_inlines": false,
+        "collapsible_stacked_inlines_collapsed": true,
+        "collapsible_tabular_inlines": false,
+        "collapsible_tabular_inlines_collapsed": true,
+        "recent_actions_visible": true,
+        "form_submit_sticky": false,
+        "form_pagination_sticky": false
+    }
+},
+{
+    "model": "admin_interface.theme",
+    "pk": 3,
+    "fields": {
+        "name": "Foundation",
+        "active": false,
+        "title": "Django administration",
+        "title_color": "#DDDDDD",
+        "title_visible": false,
+        "logo": "",
+        "logo_color": "#CCCCCC",
+        "logo_max_width": 400,
+        "logo_max_height": 100,
+        "logo_visible": true,
+        "favicon": "",
+        "env_name": "",
+        "env_color": "#E74C3C",
+        "env_visible_in_header": true,
+        "env_visible_in_favicon": true,
+        "language_chooser_active": true,
+        "language_chooser_control": "default-select",
+        "language_chooser_display": "code",
+        "css_header_background_color": "#2C3840",
+        "css_header_text_color": "#FFFFFF",
+        "css_header_link_color": "#FFFFFF",
+        "css_header_link_hover_color": "#DDDDDD",
+        "css_module_background_color": "#074E68",
+        "css_module_background_selected_color": "#FFFFCC",
+        "css_module_text_color": "#FFFFFF",
+        "css_module_link_color": "#FFFFFF",
+        "css_module_link_selected_color": "#FFFFFF",
+        "css_module_link_hover_color": "#DDDDDD",
+        "css_module_rounded_corners": true,
+        "css_generic_link_color": "#000000",
+        "css_generic_link_hover_color": "#074E68",
+        "css_generic_link_active_color": "#29B864",
+        "css_save_button_background_color": "#2199E8",
+        "css_save_button_background_hover_color": "#1585CF",
+        "css_save_button_text_color": "#FFFFFF",
+        "css_delete_button_background_color": "#CC4B37",
+        "css_delete_button_background_hover_color": "#BF4634",
+        "css_delete_button_text_color": "#FFFFFF",
+        "related_modal_active": true,
+        "related_modal_background_color": "#000000",
+        "related_modal_background_opacity": "0.2",
+        "related_modal_rounded_corners": true,
+        "related_modal_close_button_visible": true,
+        "list_filter_highlight": true,
+        "list_filter_dropdown": false,
+        "list_filter_sticky": true,
+        "list_filter_removal_links": false,
+        "foldable_apps": true,
+        "show_fieldsets_as_tabs": false,
+        "show_inlines_as_tabs": false,
+        "collapsible_stacked_inlines": false,
+        "collapsible_stacked_inlines_collapsed": true,
+        "collapsible_tabular_inlines": false,
+        "collapsible_tabular_inlines_collapsed": true,
+        "recent_actions_visible": true,
+        "form_submit_sticky": false,
+        "form_pagination_sticky": false
+    }
+},
+{
+    "model": "admin_interface.theme",
+    "pk": 4,
+    "fields": {
+        "name": "USWDS",
+        "active": true,
+        "title": "Theatre API service - django admin",
+        "title_color": "#FFFFFF",
+        "title_visible": false,
+        "logo": "",
+        "logo_color": "#FFFFFF",
+        "logo_max_width": 400,
+        "logo_max_height": 100,
+        "logo_visible": true,
+        "favicon": "",
+        "env_name": "",
+        "env_color": "#E74C3C",
+        "env_visible_in_header": true,
+        "env_visible_in_favicon": true,
+        "language_chooser_active": true,
+        "language_chooser_control": "default-select",
+        "language_chooser_display": "code",
+        "css_header_background_color": "#112E51",
+        "css_header_text_color": "#FFFFFF",
+        "css_header_link_color": "#FFFFFF",
+        "css_header_link_hover_color": "#E1F3F8",
+        "css_module_background_color": "#205493",
+        "css_module_background_selected_color": "#FFFFCC",
+        "css_module_text_color": "#FFFFFF",
+        "css_module_link_color": "#FFFFFF",
+        "css_module_link_selected_color": "#FFFFFF",
+        "css_module_link_hover_color": "#E1F3F8",
+        "css_module_rounded_corners": true,
+        "css_generic_link_color": "#205493",
+        "css_generic_link_hover_color": "#0071BC",
+        "css_generic_link_active_color": "#29B864",
+        "css_save_button_background_color": "#205493",
+        "css_save_button_background_hover_color": "#112E51",
+        "css_save_button_text_color": "#FFFFFF",
+        "css_delete_button_background_color": "#CD2026",
+        "css_delete_button_background_hover_color": "#981B1E",
+        "css_delete_button_text_color": "#FFFFFF",
+        "related_modal_active": true,
+        "related_modal_background_color": "#000000",
+        "related_modal_background_opacity": "0.8",
+        "related_modal_rounded_corners": true,
+        "related_modal_close_button_visible": true,
+        "list_filter_highlight": true,
+        "list_filter_dropdown": false,
+        "list_filter_sticky": true,
+        "list_filter_removal_links": false,
+        "foldable_apps": true,
+        "show_fieldsets_as_tabs": false,
+        "show_inlines_as_tabs": false,
+        "collapsible_stacked_inlines": true,
+        "collapsible_stacked_inlines_collapsed": true,
+        "collapsible_tabular_inlines": false,
+        "collapsible_tabular_inlines_collapsed": true,
+        "recent_actions_visible": true,
+        "form_submit_sticky": false,
+        "form_pagination_sticky": false
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3sxcwpjung39zazfbmfyy2kxeyhpokou",
+    "fields": {
+        "session_data": ".eJxVjDEOAiEURO9CbQiwfPhY2nsGAvtBVg0ky25lvLuSbKHNFPPezIv5sG_F7z2tfiF2ZpKdfrsY5keqA9A91Fvjc6vbukQ-FH7Qzq-N0vNyuH8HJfQy1joCpmRk1tFOyYDDLClHo1QwStjZ6gACnSQnwWSy30CBBBMCkiL2_gDfUTdl:1rKiBE:rj8vIvj69aICnb21OyUkDr7iHdjf4MS4rrKf9gZytXc",
+        "expire_date": "2024-01-16T17:03:52.961Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8noxisb83wptipp9yadz7p31hehjfqjr",
+    "fields": {
+        "session_data": ".eJxVjDEOAiEURO9CbQiwfPhY2nsGAvtBVg0ky25lvLuSbKHNFPPezIv5sG_F7z2tfiF2ZpKdfrsY5keqA9A91Fvjc6vbukQ-FH7Qzq-N0vNyuH8HJfQy1joCpmRk1tFOyYDDLClHo1QwStjZ6gACnSQnwWSy30CBBBMCkiL2_gDfUTdl:1rJWoK:jH6iu9QPCs44_QT89bxgeWz-TGpzK-gexAuc2it6H5E",
+        "expire_date": "2024-01-13T10:43:20.436Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zi799z3s5vnsitnoiqt9hfc2fy6a2k0l",
+    "fields": {
+        "session_data": ".eJxVjDEOAiEURO9CbQiwfPhY2nsGAvtBVg0ky25lvLuSbKHNFPPezIv5sG_F7z2tfiF2ZpKdfrsY5keqA9A91Fvjc6vbukQ-FH7Qzq-N0vNyuH8HJfQy1joCpmRk1tFOyYDDLClHo1QwStjZ6gACnSQnwWSy30CBBBMCkiL2_gDfUTdl:1rImF3:GDn4PX68PdObR8rPkZIdqsRhgxDhLovhbPIxkjk3nY0",
+        "expire_date": "2024-01-11T08:59:49.619Z"
+    }
+},
+{
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$XfeiMt3RHNVVkNO4AT9xdD$+6pJtJVyJBnaU/btlybjwb9R4ifb2E3xK+qX1qT0fb0=",
+        "last_login": "2024-01-02T17:03:52.955Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-26T15:06:47Z",
+        "email": "admin@pes.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$lDSlRRSkfkevQBg64Yqk8v$eo/FOTbUK61slm8YYF04MV2ggbiDsWDwdHpq6AZzseM=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-27T14:54:28.513Z",
+        "email": "Lik77@outlook.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$Ajcg3uqbAXIHG0oVOKwli2$u9bCcAueMRGboIaBSdwWVsCupRHTd4TgEnqRevfEDr0=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-27T14:54:49.621Z",
+        "email": "oebujbukdi@gmail.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$qpKKQv1eYxm9cq1F72yrIx$W+c0QlcwpENu3QqoH3VNBgTvjl2BgXBy8U6pBzzv69o=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-27T14:55:19.149Z",
+        "email": "kok@gmail.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$cHuaRQNYUzcSYIx5y3APyY$dhgruzba+Y4gRjmayO1WLveU/MwOGa7s5RK0Iw0aAh0=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-27T14:56:17.308Z",
+        "email": "polhj@gmail.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$3rEm2dxzF8lGom6K3ss49Q$ctBr9FogsHQjD2FKUsTxtCBAepLN8XCImpAgRywDAsE=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-30T07:40:53.970Z",
+        "email": "kljjlkj@gmail.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$O9ZuEqEUlwtWddJz5fgkHD$4NfkXcX9gUtREumsXfU6wd762X4xmkzqip7/DVF/hh4=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-30T09:46:34.629Z",
+        "email": "user97912@test.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$aHvwfv8RS6Rj5L2nK9jH4I$MnS1TPSNHUMifdTYDiWrM9COqLzPcg9R4W5E26RQD8A=",
+        "last_login": "2023-12-30T10:38:51Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-12-30T10:00:05Z",
+        "email": "pes@gmail.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$D3Uc2cPzfBXNmrzHK7eEfa$so/CGT50ve2SLjKNrcb/YDqaWdC60oQMY3BqLKAWYVc=",
+        "last_login": "2023-12-30T10:42:05.614Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-30T10:39:24Z",
+        "email": "admin@pes1.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$ZUOINe42JTz3VgNAwzlSUd$LkjkR0gCQQVQMqUUXDzyXCkQBGnKxwLdkTHMB7HnFTI=",
+        "last_login": "2023-12-30T10:42:43Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-30T10:42:29Z",
+        "email": "admin@pes2.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 1,
+    "fields": {
+        "name": "Newp",
+        "rows": 12,
+        "seats_in_row": 15
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 2,
+    "fields": {
+        "name": "Astrat",
+        "rows": 50,
+        "seats_in_row": 15
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 3,
+    "fields": {
+        "name": "Koll",
+        "rows": 40,
+        "seats_in_row": 12
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 4,
+    "fields": {
+        "name": "Artr",
+        "rows": 35,
+        "seats_in_row": 30
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 5,
+    "fields": {
+        "name": "Revers",
+        "rows": 21,
+        "seats_in_row": 56
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 6,
+    "fields": {
+        "name": "Poridge",
+        "rows": 15,
+        "seats_in_row": 20
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 7,
+    "fields": {
+        "name": "psarnya",
+        "rows": 20,
+        "seats_in_row": 30
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 8,
+    "fields": {
+        "name": "Blue",
+        "rows": 20,
+        "seats_in_row": 20
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 9,
+    "fields": {
+        "name": "Blue",
+        "rows": 20,
+        "seats_in_row": 20
+    }
+},
+{
+    "model": "theatre.theatrehall",
+    "pk": 10,
+    "fields": {
+        "name": "Blue",
+        "rows": 20,
+        "seats_in_row": 20
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 1,
+    "fields": {
+        "first_name": "Tom4",
+        "last_name": "Pes",
+        "image": "uploads/actors/tom4-pes-b8a00efa-dccb-46ad-bc0d-a5ab396348ff.jpeg"
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 2,
+    "fields": {
+        "first_name": "Antony",
+        "last_name": "Kotik1",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 3,
+    "fields": {
+        "first_name": "Taras",
+        "last_name": "Panda",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 4,
+    "fields": {
+        "first_name": "Irina",
+        "last_name": "Krug",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 5,
+    "fields": {
+        "first_name": "Alina",
+        "last_name": "Natash",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 6,
+    "fields": {
+        "first_name": "Tonya",
+        "last_name": "Krolik",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 7,
+    "fields": {
+        "first_name": "Tom",
+        "last_name": "Ford",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 8,
+    "fields": {
+        "first_name": "Igor",
+        "last_name": "Pantera",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 9,
+    "fields": {
+        "first_name": "Oksana",
+        "last_name": "Kus",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 10,
+    "fields": {
+        "first_name": "Tom",
+        "last_name": "Dgerr",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 11,
+    "fields": {
+        "first_name": "string",
+        "last_name": "string",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 12,
+    "fields": {
+        "first_name": "string",
+        "last_name": "string",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.actor",
+    "pk": 13,
+    "fields": {
+        "first_name": "string",
+        "last_name": "string",
+        "image": ""
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Drama"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 2,
+    "fields": {
+        "name": "History"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 3,
+    "fields": {
+        "name": "Geografy"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 4,
+    "fields": {
+        "name": "Animal Planet"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 5,
+    "fields": {
+        "name": "Romantic"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 6,
+    "fields": {
+        "name": "Comedy"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 7,
+    "fields": {
+        "name": "Action"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 8,
+    "fields": {
+        "name": "Shooter"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 9,
+    "fields": {
+        "name": "Blockbaster"
+    }
+},
+{
+    "model": "theatre.genre",
+    "pk": 10,
+    "fields": {
+        "name": "Alh"
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 1,
+    "fields": {
+        "title": "White Cat1",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "uploads/plays/white-cat1-5e384e84-e68c-4688-8425-32f009aff571.jpeg",
+        "genres": [
+            4
+        ],
+        "actors": [
+            2
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 2,
+    "fields": {
+        "title": "Boris",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            2
+        ],
+        "actors": [
+            3
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 3,
+    "fields": {
+        "title": "Dream",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            5
+        ],
+        "actors": [
+            5
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 4,
+    "fields": {
+        "title": "Portet",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            9
+        ],
+        "actors": [
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 5,
+    "fields": {
+        "title": "Portrait",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            6
+        ],
+        "actors": [
+            8,
+            9,
+            10
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 6,
+    "fields": {
+        "title": "Geroev Dnipra",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            8
+        ],
+        "actors": [
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 7,
+    "fields": {
+        "title": "Best V",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            9
+        ],
+        "actors": [
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 8,
+    "fields": {
+        "title": "Battle of Titans",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            5
+        ],
+        "actors": [
+            5
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 9,
+    "fields": {
+        "title": "Sobaki USSR",
+        "description": "Some play description. Good play, without any age restrictions",
+        "image": "",
+        "genres": [
+            1,
+            4
+        ],
+        "actors": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 10,
+    "fields": {
+        "title": "KK",
+        "description": "jlkjl/",
+        "image": "",
+        "genres": [
+            2
+        ],
+        "actors": [
+            3
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 11,
+    "fields": {
+        "title": "kjkl",
+        "description": "kjlkj",
+        "image": "",
+        "genres": [
+            7
+        ],
+        "actors": [
+            5
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 12,
+    "fields": {
+        "title": "sdf",
+        "description": "sdfsdf",
+        "image": "uploads/plays/sdf-3d16faf5-cd8b-43ed-80e9-f2fe76b83b95.jpeg",
+        "genres": [
+            3
+        ],
+        "actors": [
+            7
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 13,
+    "fields": {
+        "title": "sdf",
+        "description": "sdf",
+        "image": "uploads/plays/sdf-33c135bd-6e0b-4432-b40f-132285cfe170.jpeg",
+        "genres": [
+            2
+        ],
+        "actors": [
+            5
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 14,
+    "fields": {
+        "title": "sdf",
+        "description": "sdf",
+        "image": "uploads/plays/sdf-5f3c08b9-7bee-4913-ac7f-65e50494df5d.jpeg",
+        "genres": [
+            2
+        ],
+        "actors": [
+            8
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 15,
+    "fields": {
+        "title": "sdf",
+        "description": "sdf",
+        "image": "uploads/plays/sdf-632441db-2374-4de1-a064-a049ab2817a8.jpeg",
+        "genres": [
+            2
+        ],
+        "actors": [
+            8
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 16,
+    "fields": {
+        "title": "sdf",
+        "description": "sdf",
+        "image": "uploads/plays/sdf-aae5a3a4-25e9-4d12-ba66-2bdf4f6d7f89.jpeg",
+        "genres": [
+            2
+        ],
+        "actors": [
+            8
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 17,
+    "fields": {
+        "title": "jkkjjkh",
+        "description": ",k.lk",
+        "image": "",
+        "genres": [
+            3
+        ],
+        "actors": [
+            6
+        ]
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 18,
+    "fields": {
+        "title": "Play",
+        "description": "short description",
+        "image": "",
+        "genres": [],
+        "actors": []
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 19,
+    "fields": {
+        "title": "Babuim",
+        "description": "babuin",
+        "image": "",
+        "genres": [],
+        "actors": []
+    }
+},
+{
+    "model": "theatre.play",
+    "pk": 20,
+    "fields": {
+        "title": "Sample play",
+        "description": "Sample description",
+        "image": "",
+        "genres": [],
+        "actors": []
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 1,
+    "fields": {
+        "show_time": "2024-01-09T14:50:24Z",
+        "play": 1,
+        "theatre_hall": 5
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 2,
+    "fields": {
+        "show_time": "2024-01-27T14:50:38Z",
+        "play": 6,
+        "theatre_hall": 4
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 3,
+    "fields": {
+        "show_time": "2024-02-04T14:51:06Z",
+        "play": 3,
+        "theatre_hall": 3
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 4,
+    "fields": {
+        "show_time": "2024-01-14T14:51:22Z",
+        "play": 4,
+        "theatre_hall": 2
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 5,
+    "fields": {
+        "show_time": "2024-02-04T14:51:33Z",
+        "play": 5,
+        "theatre_hall": 1
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 6,
+    "fields": {
+        "show_time": "2024-03-10T14:52:15Z",
+        "play": 7,
+        "theatre_hall": 1
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 7,
+    "fields": {
+        "show_time": "2024-10-11T12:12:00Z",
+        "play": 1,
+        "theatre_hall": 2
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 8,
+    "fields": {
+        "show_time": "2024-03-10T14:52:15Z",
+        "play": 18,
+        "theatre_hall": 8
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 9,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 10,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 11,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 12,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 13,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 14,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 15,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 16,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 17,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 18,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 19,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 20,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 21,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 22,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 23,
+    "fields": {
+        "show_time": "2022-06-07T14:00:00Z",
+        "play": 19,
+        "theatre_hall": 9
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 24,
+    "fields": {
+        "show_time": "2022-06-03T14:00:00Z",
+        "play": 20,
+        "theatre_hall": 10
+    }
+},
+{
+    "model": "theatre.performance",
+    "pk": 25,
+    "fields": {
+        "show_time": "2022-06-03T14:00:00Z",
+        "play": 20,
+        "theatre_hall": 10
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 1,
+    "fields": {
+        "created_at": "2023-12-27T15:03:48.549Z",
+        "user": [
+            "Lik77@outlook.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 2,
+    "fields": {
+        "created_at": "2023-12-27T15:11:06.159Z",
+        "user": [
+            "Lik77@outlook.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 3,
+    "fields": {
+        "created_at": "2023-12-27T15:11:41.953Z",
+        "user": [
+            "kok@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 4,
+    "fields": {
+        "created_at": "2023-12-27T15:12:24.881Z",
+        "user": [
+            "oebujbukdi@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 5,
+    "fields": {
+        "created_at": "2023-12-27T15:13:01.328Z",
+        "user": [
+            "polhj@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 6,
+    "fields": {
+        "created_at": "2023-12-27T15:13:29.642Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 7,
+    "fields": {
+        "created_at": "2023-12-28T13:31:55.396Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 8,
+    "fields": {
+        "created_at": "2023-12-28T13:44:48.310Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 9,
+    "fields": {
+        "created_at": "2023-12-28T13:44:55.960Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 10,
+    "fields": {
+        "created_at": "2023-12-28T13:45:05.074Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 11,
+    "fields": {
+        "created_at": "2023-12-28T13:46:42.212Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 12,
+    "fields": {
+        "created_at": "2023-12-28T15:24:27.493Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 13,
+    "fields": {
+        "created_at": "2023-12-30T09:46:38.999Z",
+        "user": [
+            "user97912@test.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 14,
+    "fields": {
+        "created_at": "2023-12-30T17:11:09.765Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 15,
+    "fields": {
+        "created_at": "2023-12-30T17:12:34.928Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 16,
+    "fields": {
+        "created_at": "2023-12-30T17:36:48.686Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 17,
+    "fields": {
+        "created_at": "2023-12-30T18:12:43.517Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 18,
+    "fields": {
+        "created_at": "2023-12-30T19:14:27.670Z",
+        "user": [
+            "Lik77@outlook.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 19,
+    "fields": {
+        "created_at": "2023-12-30T19:28:12.725Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 20,
+    "fields": {
+        "created_at": "2023-12-31T07:23:32.895Z",
+        "user": [
+            "admin@pes.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 21,
+    "fields": {
+        "created_at": "2023-12-31T07:34:21.087Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 22,
+    "fields": {
+        "created_at": "2023-12-31T07:43:18.588Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 23,
+    "fields": {
+        "created_at": "2023-12-31T07:44:34.237Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 24,
+    "fields": {
+        "created_at": "2023-12-31T08:05:08.704Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 25,
+    "fields": {
+        "created_at": "2023-12-31T08:28:51.407Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 26,
+    "fields": {
+        "created_at": "2023-12-31T08:43:26.722Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 27,
+    "fields": {
+        "created_at": "2023-12-31T08:44:27.786Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 28,
+    "fields": {
+        "created_at": "2023-12-31T08:44:47.589Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 29,
+    "fields": {
+        "created_at": "2023-12-31T08:45:01.430Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 30,
+    "fields": {
+        "created_at": "2023-12-31T08:45:55.197Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 31,
+    "fields": {
+        "created_at": "2023-12-31T08:49:50.143Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 32,
+    "fields": {
+        "created_at": "2023-12-31T08:51:36.879Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 33,
+    "fields": {
+        "created_at": "2023-12-31T08:54:19.258Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 34,
+    "fields": {
+        "created_at": "2023-12-31T09:00:08.614Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 35,
+    "fields": {
+        "created_at": "2023-12-31T09:26:21.803Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 36,
+    "fields": {
+        "created_at": "2023-12-31T10:59:54.014Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.reservation",
+    "pk": 37,
+    "fields": {
+        "created_at": "2023-12-31T14:47:57.571Z",
+        "user": [
+            "pes@gmail.com"
+        ]
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 1,
+    "fields": {
+        "performance": 6,
+        "reservation": 35,
+        "row": 9,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 2,
+    "fields": {
+        "performance": 2,
+        "reservation": 2,
+        "row": 11,
+        "seat": 5
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 3,
+    "fields": {
+        "performance": 2,
+        "reservation": 2,
+        "row": 5,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 4,
+    "fields": {
+        "performance": 2,
+        "reservation": 2,
+        "row": 3,
+        "seat": 5
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 5,
+    "fields": {
+        "performance": 2,
+        "reservation": 2,
+        "row": 6,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 6,
+    "fields": {
+        "performance": 5,
+        "reservation": 3,
+        "row": 5,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 7,
+    "fields": {
+        "performance": 5,
+        "reservation": 3,
+        "row": 3,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 8,
+    "fields": {
+        "performance": 5,
+        "reservation": 3,
+        "row": 4,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 9,
+    "fields": {
+        "performance": 5,
+        "reservation": 3,
+        "row": 6,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 10,
+    "fields": {
+        "performance": 4,
+        "reservation": 4,
+        "row": 1,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 11,
+    "fields": {
+        "performance": 5,
+        "reservation": 4,
+        "row": 2,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 12,
+    "fields": {
+        "performance": 5,
+        "reservation": 4,
+        "row": 2,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 13,
+    "fields": {
+        "performance": 5,
+        "reservation": 4,
+        "row": 2,
+        "seat": 4
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 14,
+    "fields": {
+        "performance": 1,
+        "reservation": 5,
+        "row": 5,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 15,
+    "fields": {
+        "performance": 1,
+        "reservation": 5,
+        "row": 5,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 16,
+    "fields": {
+        "performance": 1,
+        "reservation": 5,
+        "row": 5,
+        "seat": 13
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 17,
+    "fields": {
+        "performance": 2,
+        "reservation": 6,
+        "row": 5,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 18,
+    "fields": {
+        "performance": 2,
+        "reservation": 6,
+        "row": 7,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 19,
+    "fields": {
+        "performance": 2,
+        "reservation": 6,
+        "row": 8,
+        "seat": 14
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 20,
+    "fields": {
+        "performance": 6,
+        "reservation": 6,
+        "row": 11,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 21,
+    "fields": {
+        "performance": 1,
+        "reservation": 11,
+        "row": 2,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 22,
+    "fields": {
+        "performance": 1,
+        "reservation": 11,
+        "row": 2,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 23,
+    "fields": {
+        "performance": 2,
+        "reservation": 12,
+        "row": 8,
+        "seat": 3
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 24,
+    "fields": {
+        "performance": 2,
+        "reservation": 12,
+        "row": 7,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 25,
+    "fields": {
+        "performance": 7,
+        "reservation": 12,
+        "row": 1,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 26,
+    "fields": {
+        "performance": 7,
+        "reservation": 12,
+        "row": 11,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 27,
+    "fields": {
+        "performance": 1,
+        "reservation": 1,
+        "row": 1,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 28,
+    "fields": {
+        "performance": 1,
+        "reservation": 1,
+        "row": 12,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 29,
+    "fields": {
+        "performance": 1,
+        "reservation": 1,
+        "row": 11,
+        "seat": 20
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 30,
+    "fields": {
+        "performance": 1,
+        "reservation": 1,
+        "row": 12,
+        "seat": 20
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 31,
+    "fields": {
+        "performance": 2,
+        "reservation": 1,
+        "row": 5,
+        "seat": 10
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 32,
+    "fields": {
+        "performance": 3,
+        "reservation": 2,
+        "row": 5,
+        "seat": 10
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 33,
+    "fields": {
+        "performance": 1,
+        "reservation": 4,
+        "row": 5,
+        "seat": 10
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 34,
+    "fields": {
+        "performance": 3,
+        "reservation": 5,
+        "row": 1,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 35,
+    "fields": {
+        "performance": 7,
+        "reservation": 13,
+        "row": 4,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 36,
+    "fields": {
+        "performance": 7,
+        "reservation": 14,
+        "row": 12,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 37,
+    "fields": {
+        "performance": 7,
+        "reservation": 14,
+        "row": 12,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 38,
+    "fields": {
+        "performance": 6,
+        "reservation": 17,
+        "row": 2,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 39,
+    "fields": {
+        "performance": 6,
+        "reservation": 17,
+        "row": 2,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 40,
+    "fields": {
+        "performance": 7,
+        "reservation": 18,
+        "row": 13,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 41,
+    "fields": {
+        "performance": 4,
+        "reservation": 19,
+        "row": 2,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 42,
+    "fields": {
+        "performance": 4,
+        "reservation": 19,
+        "row": 2,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 43,
+    "fields": {
+        "performance": 7,
+        "reservation": 20,
+        "row": 2,
+        "seat": 1
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 44,
+    "fields": {
+        "performance": 7,
+        "reservation": 20,
+        "row": 2,
+        "seat": 2
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 45,
+    "fields": {
+        "performance": 7,
+        "reservation": 21,
+        "row": 2,
+        "seat": 3
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 46,
+    "fields": {
+        "performance": 7,
+        "reservation": 21,
+        "row": 2,
+        "seat": 4
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 47,
+    "fields": {
+        "performance": 5,
+        "reservation": 22,
+        "row": 6,
+        "seat": 7
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 48,
+    "fields": {
+        "performance": 1,
+        "reservation": 22,
+        "row": 8,
+        "seat": 7
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 49,
+    "fields": {
+        "performance": 5,
+        "reservation": 23,
+        "row": 9,
+        "seat": 9
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 50,
+    "fields": {
+        "performance": 1,
+        "reservation": 23,
+        "row": 9,
+        "seat": 9
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 51,
+    "fields": {
+        "performance": 1,
+        "reservation": 24,
+        "row": 2,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 52,
+    "fields": {
+        "performance": 1,
+        "reservation": 24,
+        "row": 2,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 53,
+    "fields": {
+        "performance": 1,
+        "reservation": 25,
+        "row": 4,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 54,
+    "fields": {
+        "performance": 1,
+        "reservation": 25,
+        "row": 4,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 55,
+    "fields": {
+        "performance": 6,
+        "reservation": 26,
+        "row": 2,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 56,
+    "fields": {
+        "performance": 7,
+        "reservation": 27,
+        "row": 2,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 57,
+    "fields": {
+        "performance": 8,
+        "reservation": 28,
+        "row": 2,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 58,
+    "fields": {
+        "performance": 8,
+        "reservation": 29,
+        "row": 4,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 59,
+    "fields": {
+        "performance": 8,
+        "reservation": 30,
+        "row": 6,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 60,
+    "fields": {
+        "performance": 8,
+        "reservation": 31,
+        "row": 7,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 61,
+    "fields": {
+        "performance": 2,
+        "reservation": 32,
+        "row": 7,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 62,
+    "fields": {
+        "performance": 1,
+        "reservation": 33,
+        "row": 7,
+        "seat": 15
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 63,
+    "fields": {
+        "performance": 4,
+        "reservation": 34,
+        "row": 4,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 64,
+    "fields": {
+        "performance": 8,
+        "reservation": 34,
+        "row": 4,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 65,
+    "fields": {
+        "performance": 1,
+        "reservation": 35,
+        "row": 11,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 66,
+    "fields": {
+        "performance": 1,
+        "reservation": 35,
+        "row": 14,
+        "seat": 11
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 67,
+    "fields": {
+        "performance": 1,
+        "reservation": 36,
+        "row": 14,
+        "seat": 5
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 68,
+    "fields": {
+        "performance": 1,
+        "reservation": 36,
+        "row": 13,
+        "seat": 9
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 69,
+    "fields": {
+        "performance": 1,
+        "reservation": 37,
+        "row": 11,
+        "seat": 12
+    }
+},
+{
+    "model": "theatre.ticket",
+    "pk": 70,
+    "fields": {
+        "performance": 1,
+        "reservation": 37,
+        "row": 14,
+        "seat": 12
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "bed9fdb722e2a3377ccf68990525e4f1d54e9b93",
+    "fields": {
+        "user": [
+            "admin@pes.com"
+        ],
+        "created": "2023-12-27T13:16:01.122Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-12-26T15:11:36.160Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-12-26T15:11:36.165Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-12-26T15:11:40.669Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-12-26T15:11:40.672Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-12-26T15:11:43.760Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-12-26T15:11:43.767Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "1",
+        "object_repr": "Django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-12-26T15:11:47.542Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-12-26T15:11:51.421Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-12-26T15:11:51.425Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "1",
+        "object_repr": "Django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-12-26T15:11:53.810Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-12-26T15:11:56.866Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-12-26T15:11:59.261Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-12-26T15:14:14.631Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-12-26T15:14:16.789Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2023-12-26T15:14:18.893Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "1",
+        "object_repr": "Django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2023-12-26T15:14:21.141Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2023-12-26T15:14:23.530Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2023-12-27T12:22:45.823Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2023-12-27T12:22:45.829Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2023-12-27T12:23:02.564Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2023-12-27T12:23:02.570Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2023-12-27T12:23:11.411Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2023-12-27T12:23:11.415Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2023-12-27T12:26:35.433Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2023-12-27T12:26:35.437Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2023-12-27T12:29:55.297Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Control\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2023-12-27T12:30:54.692Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Control\", \"Title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2023-12-27T14:15:52.609Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "1",
+        "object_repr": "Tom Pes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2023-12-27T14:16:01.261Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "2",
+        "object_repr": "Antony Kotik",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2023-12-27T14:16:05.989Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "3",
+        "object_repr": "Taras Panda",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2023-12-27T14:16:11.172Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "4",
+        "object_repr": "Irina Krug",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2023-12-27T14:16:21.659Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "5",
+        "object_repr": "Alina Natash",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2023-12-27T14:16:42.306Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "6",
+        "object_repr": "Tonya Krolik",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2023-12-27T14:16:53.073Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "7",
+        "object_repr": "Tom Ford",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2023-12-27T14:17:05.390Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "8",
+        "object_repr": "Igor Pantera",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2023-12-27T14:17:12.005Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "9",
+        "object_repr": "Oksana Kus",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2023-12-27T14:17:22.788Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "actor"
+        ],
+        "object_id": "10",
+        "object_repr": "Tom Dgerr",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2023-12-27T14:17:38.286Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "1",
+        "object_repr": "Drama",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2023-12-27T14:17:47.184Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "2",
+        "object_repr": "History",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2023-12-27T14:17:54.234Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "3",
+        "object_repr": "Geografy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2023-12-27T14:18:03.449Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "4",
+        "object_repr": "Animal Planet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2023-12-27T14:18:13.161Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "5",
+        "object_repr": "Romantic",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2023-12-27T14:18:16.704Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "6",
+        "object_repr": "Comedy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2023-12-27T14:18:21.931Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "7",
+        "object_repr": "Action",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2023-12-27T14:18:36.186Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "8",
+        "object_repr": "Shooter",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2023-12-27T14:18:42.114Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "9",
+        "object_repr": "Blockbaster",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2023-12-27T14:18:49.415Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "genre"
+        ],
+        "object_id": "10",
+        "object_repr": "Alh",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2023-12-27T14:38:06.896Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "theatrehall"
+        ],
+        "object_id": "1",
+        "object_repr": "Newp",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2023-12-27T14:42:05.424Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "theatrehall"
+        ],
+        "object_id": "2",
+        "object_repr": "Astrat",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2023-12-27T14:42:15.889Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "theatrehall"
+        ],
+        "object_id": "3",
+        "object_repr": "Koll",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2023-12-27T14:42:29.095Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "theatrehall"
+        ],
+        "object_id": "4",
+        "object_repr": "Artr",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2023-12-27T14:42:40.534Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "theatrehall"
+        ],
+        "object_id": "5",
+        "object_repr": "Revers",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2023-12-27T14:43:54.863Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "1",
+        "object_repr": "White Cat",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2023-12-27T14:44:02.241Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "2",
+        "object_repr": "Boris",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2023-12-27T14:44:17.524Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "3",
+        "object_repr": "Dream",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2023-12-27T14:44:31.263Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "4",
+        "object_repr": "Portet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2023-12-27T14:44:47.019Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "5",
+        "object_repr": "Portrait",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2023-12-27T14:46:23.920Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "6",
+        "object_repr": "Geroev Dnipra",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2023-12-27T14:46:50.437Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "7",
+        "object_repr": "Best V",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2023-12-27T14:47:11.791Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "play"
+        ],
+        "object_id": "8",
+        "object_repr": "Battle of Titans",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2023-12-27T14:50:28.117Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "performance"
+        ],
+        "object_id": "1",
+        "object_repr": "White Cat 2024-01-09 14:50:24+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2023-12-27T14:50:51.791Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "performance"
+        ],
+        "object_id": "2",
+        "object_repr": "Geroev Dnipra 2024-01-27 14:50:38+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2023-12-27T14:51:11.735Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "performance"
+        ],
+        "object_id": "3",
+        "object_repr": "Dream 2024-02-04 14:51:06+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2023-12-27T14:51:27.446Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "performance"
+        ],
+        "object_id": "4",
+        "object_repr": "Portet 2024-01-14 14:51:22+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2023-12-27T14:51:47.420Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "performance"
+        ],
+        "object_id": "5",
+        "object_repr": "Portrait 2024-02-04 14:51:33+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2023-12-27T14:52:22.785Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "performance"
+        ],
+        "object_id": "6",
+        "object_repr": "Best V 2024-03-10 14:52:15+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2023-12-27T14:54:06.255Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "1tarnink123123e@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2023-12-27T14:54:06.258Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "admin12@admin.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2023-12-27T14:54:28.730Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "Lik77@outlook.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2023-12-27T14:54:49.836Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "oebujbukdi@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2023-12-27T14:55:19.362Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "kok@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2023-12-27T14:56:17.527Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "7",
+        "object_repr": "polhj@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2023-12-27T15:03:48.558Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "1",
+        "object_repr": "2023-12-27 15:03:48.549176+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Best V 2024-03-10 14:52:15+00:00 (row: 11, seat: 15)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2023-12-27T15:11:06.181Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "2",
+        "object_repr": "2023-12-27 15:11:06.159150+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 11, seat: 5)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 5, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 3, seat: 5)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 6, seat: 11)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2023-12-27T15:11:41.972Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "3",
+        "object_repr": "2023-12-27 15:11:41.953387+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 5, seat: 11)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 3, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 4, seat: 15)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 6, seat: 11)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2023-12-27T15:12:24.901Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "4",
+        "object_repr": "2023-12-27 15:12:24.881984+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portet 2024-01-14 14:51:22+00:00 (row: 1, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 2, seat: 1)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 2, seat: 2)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Portrait 2024-02-04 14:51:33+00:00 (row: 2, seat: 4)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2023-12-27T15:13:01.345Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "5",
+        "object_repr": "2023-12-27 15:13:01.328632+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat 2024-01-09 14:50:24+00:00 (row: 5, seat: 11)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat 2024-01-09 14:50:24+00:00 (row: 5, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat 2024-01-09 14:50:24+00:00 (row: 5, seat: 13)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2023-12-27T15:13:29.658Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "6",
+        "object_repr": "2023-12-27 15:13:29.642682+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 5, seat: 11)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 7, seat: 12)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"Geroev Dnipra 2024-01-27 14:50:38+00:00 (row: 8, seat: 14)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2023-12-28T09:01:18.549Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "6",
+        "object_repr": "2023-12-27 15:13:29.642682+00:00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2023-12-29T20:41:03.517Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2023-12-29T20:41:03.526Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2023-12-29T20:41:07.202Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "3",
+        "object_repr": "Foundation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2023-12-29T20:41:07.207Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2023-12-29T20:41:15.296Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "2",
+        "object_repr": "Bootstrap",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2023-12-29T20:41:15.301Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "1",
+        "object_repr": "Django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2023-12-29T20:41:34.722Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2023-12-29T20:41:34.728Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "1",
+        "object_repr": "Django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2023-12-29T20:46:35.127Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Collapsible tabular inlines\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2023-12-29T20:47:08.777Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Collapsible stacked inlines\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2023-12-29T20:47:53.850Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "admin_interface",
+            "theme"
+        ],
+        "object_id": "4",
+        "object_repr": "USWDS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Collapsible tabular inlines\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2023-12-30T10:01:26.994Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "10",
+        "object_repr": "pes@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2023-12-30T10:35:15.310Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "admin@pes.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2023-12-30T10:39:59.671Z",
+        "user": [
+            "admin@pes1.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "10",
+        "object_repr": "pes@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2023-12-30T10:41:40.068Z",
+        "user": [
+            "admin@pes1.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "11",
+        "object_repr": "admin@pes1.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2023-12-30T10:42:55.015Z",
+        "user": [
+            "admin@pes2.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "admin@pes.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2023-12-30T10:43:06.740Z",
+        "user": [
+            "admin@pes2.com"
+        ],
+        "content_type": [
+            "user",
+            "user"
+        ],
+        "object_id": "12",
+        "object_repr": "admin@pes2.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2023-12-30T17:11:09.781Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "14",
+        "object_repr": "2023-12-30 17:11:09.765724+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat1 2024-10-11 12:12:00+00:00 (row: 12, seat: 1)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"White Cat1 2024-10-11 12:12:00+00:00 (row: 12, seat: 2)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2023-12-30T17:12:34.930Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "15",
+        "object_repr": "2023-12-30 17:12:34.928622+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2023-12-30T17:14:34.115Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "15",
+        "object_repr": "2023-12-30 17:12:34.928622+00:00",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2023-12-30T17:36:32.062Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "15",
+        "object_repr": "2023-12-30 17:12:34.928622+00:00",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2023-12-30T17:36:48.688Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "16",
+        "object_repr": "2023-12-30 17:36:48.686348+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2023-12-30T19:14:27.672Z",
+        "user": [
+            "admin@pes.com"
+        ],
+        "content_type": [
+            "theatre",
+            "reservation"
+        ],
+        "object_id": "18",
+        "object_repr": "2023-12-30 19:14:27.670311+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
