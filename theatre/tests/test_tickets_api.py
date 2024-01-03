@@ -19,10 +19,17 @@ TICKET_URL = reverse("theatre:ticket-list")
 
 
 def sample_ticket(**params):
-    theatre_hall = TheatreHall.objects.create(name="Blue", rows=20, seats_in_row=20)
-    play = Play.objects.create(title="Play", description="short description")
+    theatre_hall = TheatreHall.objects.create(
+        name="Blue", rows=20, seats_in_row=20
+    )
+    play = Play.objects.create(
+        title="Play",
+        description="short description"
+    )
     performance = Performance.objects.create(
-        play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z"
+        play=play,
+        theatre_hall=theatre_hall,
+        show_time="2024-03-10T14:52:15Z"
     )
     user = get_user_model().objects.create_user(
         f"user{random.randint(1,10000)}2@test.com", "testpass"
@@ -56,7 +63,10 @@ class UnauthenticatedTicketApiTests(TestCase):
 class AuthenticatedTicketApiTests(TestCase):
     def setUp(self) -> None:
         self.client = APIClient()
-        self.user = get_user_model().objects.create_user("test@test.com", "testpass")
+        self.user = get_user_model().objects.create_user(
+            "test@test.com",
+            "testpass"
+        )
         self.client.force_authenticate(self.user)
 
     def test_list_ticket_forbidden(self):
@@ -65,9 +75,6 @@ class AuthenticatedTicketApiTests(TestCase):
 
         res = self.client.get(TICKET_URL)
 
-        ticket = Ticket.objects.all()
-        serializer = TicketSerializer(ticket, many=True)
-
         self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
     def test_retrieve_ticket_detail_forbidden(self):
@@ -75,8 +82,6 @@ class AuthenticatedTicketApiTests(TestCase):
 
         url = detail_url(ticket.id)
         res = self.client.get(url)
-
-        serializer = TicketDetailSerializer(ticket)
 
         self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
@@ -118,10 +123,15 @@ class AdminTicketApiTests(TestCase):
         self.assertEqual(res.data, serializer.data)
 
     def test_create_ticket(self):
-        theatre_hall = TheatreHall.objects.create(name="Blue", rows=20, seats_in_row=20)
-        play = Play.objects.create(title="Play", description="short description")
+        theatre_hall = TheatreHall.objects.create(
+            name="Blue", rows=20, seats_in_row=20
+        )
+        play = Play.objects.create(
+            title="Play", description="short description"
+        )
         performance = Performance.objects.create(
-            play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z"
+            play=play, theatre_hall=theatre_hall,
+            show_time="2024-03-10T14:52:15Z"
         )
         user = get_user_model().objects.create_user(
             f"user{random.randint(1,10000)}2@test.com", "testpass"

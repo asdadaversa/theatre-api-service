@@ -92,7 +92,10 @@ class Performance(models.Model):
 
 class Reservation(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE
+    )
 
     class Meta:
         ordering = ["-created_at"]
@@ -133,7 +136,8 @@ class Ticket(models.Model):
             raise error_to_raise(
                 {
                     "row": (
-                        f"number must be in available range:" f"[1, {rows}] , not {row}"
+                        f"number must be in "
+                        f"available range:" f"[1, {rows}] , not {row}"
                     )
                 }
             )
@@ -155,7 +159,12 @@ class Ticket(models.Model):
         update_fields=None,
     ):
         self.full_clean()
-        super(Ticket, self).save(force_insert, force_update, using, update_fields)
+        super(Ticket, self).save(
+            force_insert,
+            force_update,
+            using,
+            update_fields
+        )
 
     class Meta:
         unique_together = ("performance", "row", "seat")

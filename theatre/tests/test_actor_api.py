@@ -49,7 +49,9 @@ class UnauthenticatedActorApiTests(TestCase):
 class AuthenticatedActorApiTests(TestCase):
     def setUp(self) -> None:
         self.client = APIClient()
-        self.user = get_user_model().objects.create_user("test@test.com", "testpass")
+        self.user = get_user_model().objects.create_user(
+            "test@test.com", "testpass"
+        )
         self.client.force_authenticate(self.user)
 
     def test_list_actors(self):

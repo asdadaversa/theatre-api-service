@@ -120,7 +120,8 @@ class PerformanceViewSet(viewsets.ModelViewSet):
                 .select_related("play", "theatre_hall")
                 .annotate(
                     tickets_available=(
-                        F("theatre_hall__rows") * F("theatre_hall__seats_in_row")
+                        F("theatre_hall__rows")
+                        * F("theatre_hall__seats_in_row")
                         - Count("tickets")
                     )
                 )
@@ -147,7 +148,9 @@ class PerformanceViewSet(viewsets.ModelViewSet):
         parameters=[
             OpenApiParameter(
                 name="date",
-                type={"type": "datetime.date", "items": {"type": "datetime.date"}},
+                type={
+                    "type": "datetime.date", "items": {"type": "datetime.date"}
+                },
                 description="filtering by date",
             )
         ]

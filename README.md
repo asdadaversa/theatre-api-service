@@ -49,9 +49,18 @@ $ python manage.py runserver
 ## Run with docker
 Docker should be installed
 ```
-set up your .env for docker
-docker-compose build
-docker-compose up
+set up your .env for docker, for e.g.
+POSTGRES_HOST=db
+POSTGRES_DB=app
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=secretpassword
+
+next run:
+- docker-compose build
+- docker-compose up
+
+Use the following command to load prepared data from fixture for docker:
+docker-compose run app sh -c "python manage.py test theatre/tests"
 
 ```
 
@@ -77,4 +86,4 @@ You can load ModHeader extension for your browser and add request header (JWT). 
 - Filtering plays and performances
 
 ![](theatre.png)
-![](/structure.png)
+![](structure.png)

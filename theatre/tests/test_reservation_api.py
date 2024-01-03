@@ -31,10 +31,13 @@ def sample_reservation(**params):
 
 
 def sample_ticket(**params):
-    theatre_hall = TheatreHall.objects.create(name="Blue", rows=20, seats_in_row=20)
+    theatre_hall = TheatreHall.objects.create(
+        name="Blue", rows=20, seats_in_row=20
+    )
     play = Play.objects.create(title="Play", description="short description")
     performance = Performance.objects.create(
-        play=play, theatre_hall=theatre_hall, show_time="2024-03-10T14:52:15Z"
+        play=play, theatre_hall=theatre_hall,
+        show_time="2024-03-10T14:52:15Z"
     )
     user = get_user_model().objects.create_user(
         f"user{random.randint(1,10000)}2@test.com", "testpass"
@@ -45,7 +48,7 @@ def sample_ticket(**params):
         "reservation": reservation,
         "performance": performance,
         "row": 10,
-        "seat": 20,
+        "seat": 20
     }
     defaults.update(params)
 
@@ -68,20 +71,28 @@ class UnauthenticatedReservationApiTests(TestCase):
 class AuthenticatedReservationApiTests(TestCase):
     def setUp(self) -> None:
         self.client = APIClient()
-        self.user = get_user_model().objects.create_user("user@user.com", "testpass")
+        self.user = get_user_model().objects.create_user(
+            "user@user.com", "testpass"
+        )
         self.client.force_authenticate(self.user)
 
     def test_create_reservation_with_ticket(self):
-        ticket1 = sample_ticket(row=1, seat=19)
-        ticket2 = sample_ticket(row=2, seat=18)
+        theatre_hall = TheatreHall.objects.create(
+            name="Blue", rows=20, seats_in_row=20
+        )
+        play = Play.objects.create(
+            title="Play", description="short description"
+        )
+        performance = Performance.objects.create(
+            play=play, theatre_hall=theatre_hall,
+            show_time="2024-03-10T14:52:15Z"
+        )
 
-        payload = {
-            "tickets": [
-                {"id": 1, "row": 11, "seat": 11, "performance": 1},
-                {"id": 1, "row": 14, "seat": 11, "performance": 1},
-            ]
+        payload = {"tickets": [
+            {"id": 1, "row": 11, "seat": 11, "performance": performance.id},
+            {"id": 1, "row": 14, "seat": 11, "performance": performance.id}
+        ]
         }
-
         res = self.client.post(RESERVATION_URL, payload, format="json")
         reservation = Reservation.objects.get(id=res.data["id"])
         tickets = reservation.tickets.all()
@@ -104,9 +115,6 @@ class AuthenticatedReservationApiTests(TestCase):
 
         res = self.client.get(RESERVATION_URL)
 
-        reservations = Reservation.objects.all()
-        serializer = ReservationSerializer(reservations, many=True)
-
         self.assertEqual(res.status_code, status.HTTP_200_OK)
 
     def test_retrieve_reservation_detail(self):
@@ -121,14 +129,10 @@ class AuthenticatedReservationApiTests(TestCase):
         self.assertEqual(res.data, serializer.data)
 
     def test_put_reservation_not_allowed(self):
-        ticket1 = sample_ticket(row=1, seat=19)
-        ticket2 = sample_ticket(row=2, seat=18)
 
-        payload = {
-            "tickets": [
-                {"id": 1, "row": 11, "seat": 11, "performance": 1},
-                {"id": 1, "row": 14, "seat": 11, "performance": 1},
-            ]
+        payload = {"tickets": [
+            {"id": 1, "row": 11, "seat": 11, "performance": 1},
+            {"id": 1, "row": 14, "seat": 11, "performance": 1}]
         }
 
         reservation = sample_reservation(user=self.user)

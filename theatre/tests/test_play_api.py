@@ -49,7 +49,9 @@ def sample_actor(**params):
 
 
 def sample_performance(**params):
-    theatre_hall = TheatreHall.objects.create(name="Blue", rows=20, seats_in_row=20)
+    theatre_hall = TheatreHall.objects.create(
+        name="Blue", rows=20, seats_in_row=20
+    )
 
     defaults = {
         "show_time": "2022-06-02 14:00:00",
@@ -82,7 +84,9 @@ class UnauthenticatedPlayApiTests(TestCase):
 class AuthenticatedPlayApiTests(TestCase):
     def setUp(self) -> None:
         self.client = APIClient()
-        self.user = get_user_model().objects.create_user("test@test.com", "testpass")
+        self.user = get_user_model().objects.create_user(
+            "test@test.com", "testpass"
+        )
         self.client.force_authenticate(self.user)
 
     def test_list_plays(self):
@@ -118,7 +122,9 @@ class AuthenticatedPlayApiTests(TestCase):
         play1.actors.add(actor1, actor2)
         play2.genres.add(genre1, genre2)
 
-        res = self.client.get(PLAY_URL, {"plays": f"{play1.title}, {play2.title}"})
+        res = self.client.get(
+            PLAY_URL, {"plays": f"{play1.title}, {play2.title}"}
+        )
 
         serializer1 = PlayListSerializer(play1)
         serializer2 = PlayListSerializer(play2)
@@ -321,8 +327,6 @@ class PLayImageUploadTests(TestCase):
                 {
                     "title": "Title",
                     "description": "Description",
-                    "genres": [1],
-                    "actors": [1],
                     "image": ntf,
                 },
                 format="multipart",
