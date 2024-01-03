@@ -1,0 +1,6 @@
+venv
+.python-version
+.idea
+.github
+.flake8
+
